@@ -937,12 +937,12 @@
       "registry_name": "ucya_armor_boots_recipe"
     },
     {
-      "name": "Melting",
-      "type": "enchantment",
+      "name": "UnknownIngot",
+      "type": "achievement",
       "sortid": 114,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "melting"
+      "registry_name": "unknown_ingot"
     }
   ],
   "variable_elements": [],
@@ -973,7 +973,6 @@
       "item.accurs.ucya_hoe": "Ucya Hoe",
       "block.accurs.stea_fence": "Stea Fence",
       "item.accurs.ucya_ingot": "Ucya",
-      "enchantment.accurs.melting": "Melting",
       "item.accurs.lapis_armor_helmet": "Lapis Helmet",
       "item.accurs.lapis_armor_chestplate": "Lapis Chestplate",
       "item.accurs.ucya_shovel": "Ucya Shovel",
@@ -997,9 +996,11 @@
       "block.accurs.tyco_leaves": "Tyco Leaves",
       "item.accurs.lapis_sword": "Lapis Sword",
       "item.accurs.kayze_axe": "Kayze Axe",
+      "advancements.unknown_ingot.title": "What\u0027s this?",
       "block.accurs.tyco_fence_gate": "Tyco Fence Gate",
       "block.accurs.stea_planks": "Stea Planks",
       "item.accurs.kayze_armor_chestplate": "Kayze Chestplate",
+      "advancements.unknown_ingot.descr": "Smelt Ucya Ingot",
       "item.accurs.lapis_shovel": "Lapis Shovel",
       "block.accurs.ucya_block": "Block of Ucya",
       "item.accurs.ucya_sword": "Ucya Sword",

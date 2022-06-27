@@ -28,7 +28,6 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.accurs.init.AccursModItems;
 import net.mcreator.accurs.init.AccursModFeatures;
-import net.mcreator.accurs.init.AccursModEnchantments;
 import net.mcreator.accurs.init.AccursModBlocks;
 import net.mcreator.accurs.init.AccursModBiomes;
 
@@ -52,8 +51,6 @@ public class AccursMod {
 		AccursModItems.REGISTRY.register(bus);
 
 		AccursModFeatures.REGISTRY.register(bus);
-
-		AccursModEnchantments.REGISTRY.register(bus);
 
 		AccursModBiomes.REGISTRY.register(bus);
 

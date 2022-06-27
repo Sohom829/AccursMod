@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "accurs:ucya_ingot"
+    },
+    "title": {
+      "translate": "advancements.unknown_ingot.title"
+    },
+    "description": {
+      "translate": "advancements.unknown_ingot.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "unknown_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "accurs:ucya_ingot"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 2
+  },
+  "parent": "minecraft:story/smelt_iron"
+}
