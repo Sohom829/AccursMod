@@ -974,8 +974,8 @@
   "language_map": {
     "en_us": {
       "item.accurs.ucya_axe": "Ucya Axe",
-      "block.accurs.tyco_log": "Tyco Log",
       "item.accurs.redstone_armor_chestplate": "Redstone Chestplate",
+      "block.accurs.tyco_log": "Tyco Log",
       "item.accurs.redstone_armor_leggings": "Redstone Leggings",
       "item.accurs.redstone_armor_helmet": "Redstone Helmet",
       "item.accurs.kayze_hoe": "Kayze Hoe",
