@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 4,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:TycoPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:TycoPlanks"
+      },
+      {
+        "value": "CUSTOM:TycoPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:TycoPlanks"
+      },
+      {
+        "value": "CUSTOM:TycoPlanks"
+      },
+      {
+        "value": "CUSTOM:TycoPlanks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:TycoStairs"
+    },
+    "name": "tyco_stairs_recipe",
+    "namespace": "mod"
+  }
+}

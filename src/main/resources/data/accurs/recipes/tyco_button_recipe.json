@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "accurs:tyco_planks"
+    }
+  ],
+  "result": {
+    "item": "accurs:tyco_button",
+    "count": 1
+  }
+}

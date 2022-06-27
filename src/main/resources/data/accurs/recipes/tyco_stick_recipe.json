@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1"
+  ],
+  "key": {
+    "0": {
+      "item": "accurs:tyco_planks"
+    },
+    "1": {
+      "item": "accurs:tyco_planks"
+    }
+  },
+  "result": {
+    "item": "accurs:tyco_stick",
+    "count": 4
+  }
+}

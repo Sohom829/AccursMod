@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "accurs:kayzer"
+    },
+    "2": {
+      "item": "accurs:kayzer"
+    },
+    "3": {
+      "item": "accurs:kayzer"
+    },
+    "5": {
+      "item": "accurs:kayzer"
+    }
+  },
+  "result": {
+    "item": "accurs:kayze_armor_boots",
+    "count": 1
+  }
+}

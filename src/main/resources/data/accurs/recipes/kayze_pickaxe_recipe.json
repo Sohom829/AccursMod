@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "accurs:kayzer"
+    },
+    "1": {
+      "item": "accurs:kayzer"
+    },
+    "2": {
+      "item": "accurs:kayzer"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "accurs:kayze_pickaxe",
+    "count": 1
+  }
+}

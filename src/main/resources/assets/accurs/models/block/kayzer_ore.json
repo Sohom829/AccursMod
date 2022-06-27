@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "accurs:blocks/kayzer_ore",
+    "particle": "accurs:blocks/kayzer_ore"
+  }
+}

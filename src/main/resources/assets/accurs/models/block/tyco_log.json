@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "accurs:blocks/tyco_log_top",
+    "up": "accurs:blocks/tyco_log_top",
+    "north": "accurs:blocks/tyco_log_side",
+    "east": "accurs:blocks/tyco_log_side",
+    "south": "accurs:blocks/tyco_log_side",
+    "west": "accurs:blocks/tyco_log_side",
+    "particle": "accurs:blocks/tyco_log_top"
+  }
+}

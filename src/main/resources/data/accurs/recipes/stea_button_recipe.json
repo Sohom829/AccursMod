@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "accurs:stea_planks"
+    }
+  ],
+  "result": {
+    "item": "accurs:stea_button",
+    "count": 1
+  }
+}

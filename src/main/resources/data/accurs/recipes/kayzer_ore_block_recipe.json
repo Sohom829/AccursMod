@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "accurs:kayzer"
+    },
+    "1": {
+      "item": "accurs:kayzer"
+    },
+    "2": {
+      "item": "accurs:kayzer"
+    },
+    "3": {
+      "item": "accurs:kayzer"
+    },
+    "4": {
+      "item": "accurs:kayzer"
+    },
+    "5": {
+      "item": "accurs:kayzer"
+    },
+    "6": {
+      "item": "accurs:kayzer"
+    },
+    "7": {
+      "item": "accurs:kayzer"
+    },
+    "8": {
+      "item": "accurs:kayzer"
+    }
+  },
+  "result": {
+    "item": "accurs:kayzer_block",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "accurs:ucya_block"
+    }
+  ],
+  "result": {
+    "item": "accurs:ucya_ingot",
+    "count": 9
+  }
+}

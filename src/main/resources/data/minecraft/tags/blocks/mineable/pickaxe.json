@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "accurs:kayzer_ore",
+    "accurs:kayzer_block",
+    "accurs:ucya_ore",
+    "accurs:ucya_block"
+  ]
+}

@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="Academic Free License v3.0"
+
+[[mods]]
+modId="accurs"
+version="1.0.0"
+displayName="Accurs"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+displayURL="https://mcreator.net"
+authors="Sohom829, Sayln"
+description='''
+New ores, tools, biomes, dimensions, foods, items, enhanments 
+'''
+
+[[dependencies.accurs]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

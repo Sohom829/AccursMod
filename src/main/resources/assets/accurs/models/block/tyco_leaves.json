@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "accurs:blocks/tyco_leaves",
+    "particle": "accurs:blocks/tyco_leaves"
+  }
+}

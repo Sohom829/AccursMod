@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "accurs:tyco_log"
+    },
+    "1": {
+      "item": "accurs:tyco_log"
+    },
+    "2": {
+      "item": "accurs:tyco_log"
+    },
+    "3": {
+      "item": "accurs:tyco_log"
+    }
+  },
+  "result": {
+    "item": "accurs:tyco_wood",
+    "count": 3
+  }
+}

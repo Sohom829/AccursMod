@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "accurs:blocks/tyco_log_side",
+    "particle": "accurs:blocks/tyco_log_side"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "accurs:block/tyco_slab"
+    },
+    "type=top": {
+      "model": "accurs:block/tyco_slab_top"
+    },
+    "type=double": {
+      "model": "accurs:block/tyco_slab_full"
+    }
+  }
+}

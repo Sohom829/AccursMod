@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "accurs:kayzer_block"
+    }
+  ],
+  "result": {
+    "item": "accurs:kayzer",
+    "count": 9
+  }
+}

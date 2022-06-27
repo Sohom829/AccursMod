@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "accurs:ucya_ingot"
+    },
+    "1": {
+      "item": "accurs:ucya_ingot"
+    },
+    "2": {
+      "item": "accurs:ucya_ingot"
+    },
+    "3": {
+      "item": "accurs:ucya_ingot"
+    },
+    "5": {
+      "item": "accurs:ucya_ingot"
+    }
+  },
+  "result": {
+    "item": "accurs:ucya_armor_helmet",
+    "count": 1
+  }
+}

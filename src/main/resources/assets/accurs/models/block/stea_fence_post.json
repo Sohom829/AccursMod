@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "accurs:blocks/stea_planks",
+    "particle": "accurs:blocks/stea_planks"
+  }
+}

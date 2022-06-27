@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:stea_log"
+    }
+  ],
+  "result": {
+    "item": "accurs:stea_planks",
+    "count": 4
+  }
+}

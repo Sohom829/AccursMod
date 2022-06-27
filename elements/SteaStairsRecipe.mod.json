@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 4,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:SteaPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SteaPlanks"
+      },
+      {
+        "value": "CUSTOM:SteaPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SteaPlanks"
+      },
+      {
+        "value": "CUSTOM:SteaPlanks"
+      },
+      {
+        "value": "CUSTOM:SteaPlanks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SteaStairs"
+    },
+    "name": "stea_stairs_recipe",
+    "namespace": "mod"
+  }
+}

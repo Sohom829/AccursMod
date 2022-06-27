@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "accurs:stea_wood",
+    "accurs:stea_log",
+    "accurs:stea_planks",
+    "accurs:tyco_wood",
+    "accurs:tyco_log",
+    "accurs:tyco_planks"
+  ]
+}
