@@ -7,6 +7,7 @@ package net.mcreator.accurs.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
@@ -111,6 +112,8 @@ public class AccursModItems {
 	public static final RegistryObject<Item> UCYA_ARMOR_CHESTPLATE = REGISTRY.register("ucya_armor_chestplate", () -> new UcyaArmorItem.Chestplate());
 	public static final RegistryObject<Item> UCYA_ARMOR_LEGGINGS = REGISTRY.register("ucya_armor_leggings", () -> new UcyaArmorItem.Leggings());
 	public static final RegistryObject<Item> UCYA_ARMOR_BOOTS = REGISTRY.register("ucya_armor_boots", () -> new UcyaArmorItem.Boots());
+	public static final RegistryObject<Item> HOGALALLA = REGISTRY.register("hogalalla_spawn_egg",
+			() -> new ForgeSpawnEggItem(AccursModEntities.HOGALALLA, -13434829, -16777216, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -28,6 +28,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.accurs.init.AccursModItems;
 import net.mcreator.accurs.init.AccursModFeatures;
+import net.mcreator.accurs.init.AccursModEntities;
 import net.mcreator.accurs.init.AccursModBlocks;
 import net.mcreator.accurs.init.AccursModBiomes;
 
@@ -49,6 +50,7 @@ public class AccursMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		AccursModBlocks.REGISTRY.register(bus);
 		AccursModItems.REGISTRY.register(bus);
+		AccursModEntities.REGISTRY.register(bus);
 
 		AccursModFeatures.REGISTRY.register(bus);
 
