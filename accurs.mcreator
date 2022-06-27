@@ -943,6 +943,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "unknown_ingot"
+    },
+    {
+      "name": "WiredPickaxe",
+      "type": "achievement",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wired_pickaxe"
     }
   ],
   "variable_elements": [],
@@ -958,6 +966,7 @@
       "block.accurs.tyco_button": "Tyco Button",
       "item.accurs.kayze_armor_leggings": "Kayze Leggings",
       "block.accurs.tyco_wood": "Tyco Wood",
+      "advancements.wired_pickaxe.title": "Wired Pickaxe",
       "item.accurs.tyco_stick": "Tyco Stick",
       "item.accurs.kayze_pickaxe": "Kayze Pickaxe",
       "block.accurs.kayzer_ore": "Kayzer Ore",
@@ -1004,6 +1013,7 @@
       "item.accurs.lapis_shovel": "Lapis Shovel",
       "block.accurs.ucya_block": "Block of Ucya",
       "item.accurs.ucya_sword": "Ucya Sword",
+      "advancements.wired_pickaxe.descr": "craft ucya pickaxe",
       "item.accurs.ucya_armor_chestplate": "Ucya Chestplate",
       "block.accurs.kayzer_block": "Block of Kayzer",
       "item.accurs.kayze_armor_helmet": "Kayze Helmet",
