@@ -3,7 +3,7 @@
   "_type": "livingentity",
   "definition": {
     "mobName": "Hogalalla",
-    "mobLabel": "3",
+    "mobLabel": "",
     "mobModelName": "Biped",
     "mobModelTexture": "hogalala.png",
     "mobModelGlowTexture": "",

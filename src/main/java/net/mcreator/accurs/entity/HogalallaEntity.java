@@ -37,7 +37,6 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
-import net.minecraft.network.chat.TextComponent;
 
 import net.mcreator.accurs.init.AccursModEntities;
 
@@ -64,8 +63,6 @@ public class HogalallaEntity extends PathfinderMob {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
-		setCustomName(new TextComponent("3"));
-		setCustomNameVisible(true);
 	}
 
 	@Override
