@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "accurs:block/hell_trees_slab"
+    },
+    "type=top": {
+      "model": "accurs:block/hell_trees_slab_top"
+    },
+    "type=double": {
+      "model": "accurs:block/hell_trees_slab_full"
+    }
+  }
+}

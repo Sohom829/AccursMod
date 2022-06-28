@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "accurs:hell_trees_planks"
+    },
+    "3": {
+      "item": "accurs:hell_trees_planks"
+    },
+    "4": {
+      "item": "accurs:hell_trees_planks"
+    },
+    "6": {
+      "item": "accurs:hell_trees_planks"
+    },
+    "7": {
+      "item": "accurs:hell_trees_planks"
+    },
+    "8": {
+      "item": "accurs:hell_trees_planks"
+    }
+  },
+  "result": {
+    "item": "accurs:hell_trees_stairs",
+    "count": 4
+  }
+}

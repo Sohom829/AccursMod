@@ -14,6 +14,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.accurs.item.UtyxItem;
+import net.mcreator.accurs.item.UtyxFluidItem;
 import net.mcreator.accurs.item.UcyaSwordItem;
 import net.mcreator.accurs.item.UcyaShovelItem;
 import net.mcreator.accurs.item.UcyaPickaxeItem;
@@ -162,6 +164,19 @@ public class AccursModItems {
 			() -> new EmeraldArmourArmorItem.Leggings());
 	public static final RegistryObject<Item> EMERALD_ARMOUR_ARMOR_BOOTS = REGISTRY.register("emerald_armour_armor_boots",
 			() -> new EmeraldArmourArmorItem.Boots());
+	public static final RegistryObject<Item> UTYX_FLUID_BUCKET = REGISTRY.register("utyx_fluid_bucket", () -> new UtyxFluidItem());
+	public static final RegistryObject<Item> UTYX = REGISTRY.register("utyx", () -> new UtyxItem());
+	public static final RegistryObject<Item> HELL_TREES_WOOD = block(AccursModBlocks.HELL_TREES_WOOD, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> HELL_TREES_LOG = block(AccursModBlocks.HELL_TREES_LOG, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> HELL_TREES_PLANKS = block(AccursModBlocks.HELL_TREES_PLANKS, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> HELL_TREES_LEAVES = block(AccursModBlocks.HELL_TREES_LEAVES, CreativeModeTab.TAB_DECORATIONS);
+	public static final RegistryObject<Item> HELL_TREES_STAIRS = block(AccursModBlocks.HELL_TREES_STAIRS, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> HELL_TREES_SLAB = block(AccursModBlocks.HELL_TREES_SLAB, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> HELL_TREES_FENCE = block(AccursModBlocks.HELL_TREES_FENCE, CreativeModeTab.TAB_DECORATIONS);
+	public static final RegistryObject<Item> HELL_TREES_FENCE_GATE = block(AccursModBlocks.HELL_TREES_FENCE_GATE, CreativeModeTab.TAB_REDSTONE);
+	public static final RegistryObject<Item> HELL_TREES_PRESSURE_PLATE = block(AccursModBlocks.HELL_TREES_PRESSURE_PLATE,
+			CreativeModeTab.TAB_REDSTONE);
+	public static final RegistryObject<Item> HELL_TREES_BUTTON = block(AccursModBlocks.HELL_TREES_BUTTON, CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

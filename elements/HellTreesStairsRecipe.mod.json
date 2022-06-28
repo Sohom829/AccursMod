@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 4,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:HellTreesPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:HellTreesPlanks"
+      },
+      {
+        "value": "CUSTOM:HellTreesPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:HellTreesPlanks"
+      },
+      {
+        "value": "CUSTOM:HellTreesPlanks"
+      },
+      {
+        "value": "CUSTOM:HellTreesPlanks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:HellTreesStairs"
+    },
+    "name": "hell_trees_stairs_recipe",
+    "namespace": "mod"
+  }
+}

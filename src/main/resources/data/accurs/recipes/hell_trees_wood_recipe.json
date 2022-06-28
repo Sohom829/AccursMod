@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "accurs:hell_trees_log"
+    },
+    "1": {
+      "item": "accurs:hell_trees_log"
+    },
+    "2": {
+      "item": "accurs:hell_trees_log"
+    },
+    "3": {
+      "item": "accurs:hell_trees_log"
+    }
+  },
+  "result": {
+    "item": "accurs:hell_trees_wood",
+    "count": 3
+  }
+}

@@ -31,6 +31,7 @@ import net.minecraft.core.Registry;
 import net.minecraft.core.Holder;
 
 import net.mcreator.accurs.world.biome.SteaBiome;
+import net.mcreator.accurs.world.biome.HellBiome;
 import net.mcreator.accurs.AccursMod;
 
 import java.util.Map;
@@ -43,11 +44,13 @@ import com.mojang.datafixers.util.Pair;
 public class AccursModBiomes {
 	public static final DeferredRegister<Biome> REGISTRY = DeferredRegister.create(ForgeRegistries.BIOMES, AccursMod.MODID);
 	public static final RegistryObject<Biome> STEA = REGISTRY.register("stea", () -> SteaBiome.createBiome());
+	public static final RegistryObject<Biome> HELL = REGISTRY.register("hell", () -> HellBiome.createBiome());
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			SteaBiome.init();
+			HellBiome.init();
 		});
 	}
 
@@ -68,6 +71,8 @@ public class AccursModBiomes {
 						List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters.values());
 						parameters.add(new Pair<>(SteaBiome.PARAMETER_POINT,
 								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, STEA.getId()))));
+						parameters.add(new Pair<>(HellBiome.PARAMETER_POINT,
+								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, HELL.getId()))));
 
 						MultiNoiseBiomeSource moddedNoiseSource = new MultiNoiseBiomeSource(new Climate.ParameterList<>(parameters),
 								noiseSource.preset);
@@ -82,6 +87,8 @@ public class AccursModBiomes {
 							List<SurfaceRules.RuleSource> surfaceRules = new ArrayList<>(sequenceRuleSource.sequence());
 							surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, STEA.getId()),
 									Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.STONE.defaultBlockState(), Blocks.WATER.defaultBlockState()));
+							surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, HELL.getId()),
+									Blocks.NETHERRACK.defaultBlockState(), Blocks.BASALT.defaultBlockState(), Blocks.LAVA.defaultBlockState()));
 							NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(),
 									noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),
 									noiseGeneratorSettings.noiseRouter(),
@@ -94,6 +101,37 @@ public class AccursModBiomes {
 					}
 				}
 
+				if (dimensionType == dimensionTypeRegistry.getOrThrow(DimensionType.NETHER_LOCATION)) {
+					ChunkGenerator chunkGenerator = entry.getValue().generator();
+					// Inject biomes to biome source
+					if (chunkGenerator.getBiomeSource() instanceof MultiNoiseBiomeSource noiseSource) {
+						List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters.values());
+						parameters.add(new Pair<>(HellBiome.PARAMETER_POINT,
+								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, HELL.getId()))));
+						MultiNoiseBiomeSource moddedNoiseSource = new MultiNoiseBiomeSource(new Climate.ParameterList<>(parameters),
+								noiseSource.preset);
+						chunkGenerator.biomeSource = moddedNoiseSource;
+						chunkGenerator.runtimeBiomeSource = moddedNoiseSource;
+					}
+					// Inject surface rules
+					if (chunkGenerator instanceof NoiseBasedChunkGenerator noiseGenerator) {
+						NoiseGeneratorSettings noiseGeneratorSettings = noiseGenerator.settings.value();
+						SurfaceRules.RuleSource currentRuleSource = noiseGeneratorSettings.surfaceRule();
+						if (currentRuleSource instanceof SurfaceRules.SequenceRuleSource sequenceRuleSource) {
+							List<SurfaceRules.RuleSource> surfaceRules = new ArrayList<>(sequenceRuleSource.sequence());
+							surfaceRules.add(2, anySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, HELL.getId()),
+									Blocks.NETHERRACK.defaultBlockState(), Blocks.BASALT.defaultBlockState(), Blocks.LAVA.defaultBlockState()));
+							NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(),
+									noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),
+									noiseGeneratorSettings.noiseRouter(),
+									SurfaceRules.sequence(surfaceRules.toArray(i -> new SurfaceRules.RuleSource[i])),
+									noiseGeneratorSettings.seaLevel(), noiseGeneratorSettings.disableMobGeneration(),
+									noiseGeneratorSettings.aquifersEnabled(), noiseGeneratorSettings.oreVeinsEnabled(),
+									noiseGeneratorSettings.useLegacyRandomSource());
+							noiseGenerator.settings = new Holder.Direct(moddedNoiseGeneratorSettings);
+						}
+					}
+				}
 			}
 		}
 
@@ -109,6 +147,16 @@ public class AccursModBiomes {
 																	SurfaceRules.state(groundBlock)), SurfaceRules.state(underwaterBlock))),
 													SurfaceRules.ifTrue(SurfaceRules.stoneDepthCheck(0, true, 0, CaveSurface.FLOOR),
 															SurfaceRules.state(undergroundBlock)))));
+		}
+
+		private static SurfaceRules.RuleSource anySurfaceRule(ResourceKey<Biome> biomeKey, BlockState groundBlock, BlockState undergroundBlock,
+				BlockState underwaterBlock) {
+			return SurfaceRules.ifTrue(SurfaceRules.isBiome(biomeKey),
+					SurfaceRules.sequence(
+							SurfaceRules.ifTrue(SurfaceRules.stoneDepthCheck(0, false, 0, CaveSurface.FLOOR),
+									SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.waterBlockCheck(-1, 0), SurfaceRules.state(groundBlock)),
+											SurfaceRules.state(underwaterBlock))),
+							SurfaceRules.ifTrue(SurfaceRules.stoneDepthCheck(0, true, 0, CaveSurface.FLOOR), SurfaceRules.state(undergroundBlock))));
 		}
 	}
 }

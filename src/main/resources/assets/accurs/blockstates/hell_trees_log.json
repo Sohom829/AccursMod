@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "accurs:block/hell_trees_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "accurs:block/hell_trees_log"
+    },
+    "axis=z": {
+      "model": "accurs:block/hell_trees_log",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "accurs:blocks/helltrees_planks",
+    "particle": "accurs:blocks/helltrees_planks"
+  }
+}

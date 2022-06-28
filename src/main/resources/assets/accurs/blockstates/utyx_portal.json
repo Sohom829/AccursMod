@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "accurs:block/utyx_portal_ew"
+    },
+    "axis=x": {
+      "model": "accurs:block/utyx_portal_ns"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "accurs:hell_trees_planks"
+    }
+  ],
+  "result": {
+    "item": "accurs:hell_trees_button",
+    "count": 1
+  }
+}

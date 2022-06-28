@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:helltrees_log"
+    }
+  ],
+  "result": {
+    "item": "accurs:hell_trees_planks",
+    "count": 4
+  }
+}

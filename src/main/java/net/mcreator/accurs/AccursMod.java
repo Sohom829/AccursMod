@@ -27,6 +27,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.accurs.init.AccursModItems;
+import net.mcreator.accurs.init.AccursModFluids;
 import net.mcreator.accurs.init.AccursModFeatures;
 import net.mcreator.accurs.init.AccursModEntities;
 import net.mcreator.accurs.init.AccursModBlocks;
@@ -53,6 +54,7 @@ public class AccursMod {
 		AccursModEntities.REGISTRY.register(bus);
 
 		AccursModFeatures.REGISTRY.register(bus);
+		AccursModFluids.REGISTRY.register(bus);
 
 		AccursModBiomes.REGISTRY.register(bus);
 

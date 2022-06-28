@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "accurs:blocks/helltrees_planks",
+    "top": "accurs:blocks/helltrees_planks",
+    "side": "accurs:blocks/helltrees_planks"
+  }
+}

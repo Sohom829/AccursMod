@@ -10,6 +10,8 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.accurs.block.UtyxPortalBlock;
+import net.mcreator.accurs.block.UtyxFluidBlock;
 import net.mcreator.accurs.block.UcyaOreBlock;
 import net.mcreator.accurs.block.UcyaBlockBlock;
 import net.mcreator.accurs.block.TycoWoodBlock;
@@ -46,6 +48,16 @@ import net.mcreator.accurs.block.QuancyFenceBlock;
 import net.mcreator.accurs.block.QuancyButtonBlock;
 import net.mcreator.accurs.block.KayzerOreBlock;
 import net.mcreator.accurs.block.KayzerBlockBlock;
+import net.mcreator.accurs.block.HellTreesWoodBlock;
+import net.mcreator.accurs.block.HellTreesStairsBlock;
+import net.mcreator.accurs.block.HellTreesSlabBlock;
+import net.mcreator.accurs.block.HellTreesPressurePlateBlock;
+import net.mcreator.accurs.block.HellTreesPlanksBlock;
+import net.mcreator.accurs.block.HellTreesLogBlock;
+import net.mcreator.accurs.block.HellTreesLeavesBlock;
+import net.mcreator.accurs.block.HellTreesFenceGateBlock;
+import net.mcreator.accurs.block.HellTreesFenceBlock;
+import net.mcreator.accurs.block.HellTreesButtonBlock;
 import net.mcreator.accurs.AccursMod;
 
 public class AccursModBlocks {
@@ -87,4 +99,17 @@ public class AccursModBlocks {
 	public static final RegistryObject<Block> QUANCY_BUTTON = REGISTRY.register("quancy_button", () -> new QuancyButtonBlock());
 	public static final RegistryObject<Block> RUBY_ORE = REGISTRY.register("ruby_ore", () -> new RubyOreBlock());
 	public static final RegistryObject<Block> RUBY_BLOCK = REGISTRY.register("ruby_block", () -> new RubyBlockBlock());
+	public static final RegistryObject<Block> UTYX_FLUID = REGISTRY.register("utyx_fluid", () -> new UtyxFluidBlock());
+	public static final RegistryObject<Block> UTYX_PORTAL = REGISTRY.register("utyx_portal", () -> new UtyxPortalBlock());
+	public static final RegistryObject<Block> HELL_TREES_WOOD = REGISTRY.register("hell_trees_wood", () -> new HellTreesWoodBlock());
+	public static final RegistryObject<Block> HELL_TREES_LOG = REGISTRY.register("hell_trees_log", () -> new HellTreesLogBlock());
+	public static final RegistryObject<Block> HELL_TREES_PLANKS = REGISTRY.register("hell_trees_planks", () -> new HellTreesPlanksBlock());
+	public static final RegistryObject<Block> HELL_TREES_LEAVES = REGISTRY.register("hell_trees_leaves", () -> new HellTreesLeavesBlock());
+	public static final RegistryObject<Block> HELL_TREES_STAIRS = REGISTRY.register("hell_trees_stairs", () -> new HellTreesStairsBlock());
+	public static final RegistryObject<Block> HELL_TREES_SLAB = REGISTRY.register("hell_trees_slab", () -> new HellTreesSlabBlock());
+	public static final RegistryObject<Block> HELL_TREES_FENCE = REGISTRY.register("hell_trees_fence", () -> new HellTreesFenceBlock());
+	public static final RegistryObject<Block> HELL_TREES_FENCE_GATE = REGISTRY.register("hell_trees_fence_gate", () -> new HellTreesFenceGateBlock());
+	public static final RegistryObject<Block> HELL_TREES_PRESSURE_PLATE = REGISTRY.register("hell_trees_pressure_plate",
+			() -> new HellTreesPressurePlateBlock());
+	public static final RegistryObject<Block> HELL_TREES_BUTTON = REGISTRY.register("hell_trees_button", () -> new HellTreesButtonBlock());
 }

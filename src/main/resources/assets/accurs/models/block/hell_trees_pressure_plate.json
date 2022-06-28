@@ -1,0 +1,6 @@
+{
+  "parent": "block/pressure_plate_up",
+  "textures": {
+    "texture": "accurs:blocks/helltrees_planks"
+  }
+}

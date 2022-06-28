@@ -1,0 +1,49 @@
+{
+  "_fv": 28,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:Stea"
+      },
+      {
+        "value": "CUSTOM:Hell"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "Blocks.GRASS"
+    },
+    "fluidBlock": {
+      "value": "CUSTOM:UtyxFluid"
+    },
+    "airColor": {
+      "value": -65485,
+      "falpha": 0.0
+    },
+    "canRespawnHere": false,
+    "hasFog": false,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "BED_EXPLODES",
+    "hasSkyLight": true,
+    "imitateOverworldBehaviour": false,
+    "portalFrame": {
+      "value": "CUSTOM:UcyaBlock"
+    },
+    "portalParticles": {
+      "value": "TOTEM"
+    },
+    "portalLuminance": 2,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "igniterName": "Utyx Portal Igniter",
+    "igniterTab": {
+      "value": "TOOLS"
+    },
+    "texture": "tyco_stick",
+    "portalTexture": "utyx_portal",
+    "enablePortal": true
+  }
+}
