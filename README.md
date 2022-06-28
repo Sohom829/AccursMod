@@ -13,4 +13,4 @@ A mod for everything
 - New Tools
 >
 # INSTALLATION
-Coming Soon
+[CurseForge](https://www.curseforge.com/minecraft/mc-mods/accurs)
