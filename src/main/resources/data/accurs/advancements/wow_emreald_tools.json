@@ -1,0 +1,36 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "accurs:emerald_tools_pickaxe"
+    },
+    "title": {
+      "translate": "advancements.wow_emreald_tools.title"
+    },
+    "description": {
+      "translate": "advancements.wow_emreald_tools.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "wow_emreald_tools": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "accurs:emerald_tools_pickaxe"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  }
+}

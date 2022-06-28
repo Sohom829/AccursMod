@@ -1,13 +1,13 @@
 modLoader="javafml"
 loaderVersion="[40,)"
-license="Academic Free License v3.0"
+license="MIT License"
 
 [[mods]]
 modId="accurs"
 version="1.0.0"
 displayName="Accurs"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
-displayURL="https://mcreator.net"
+credits="Sayln Inc"
+displayURL="https://github.com/Sohom829/AccursMod"
 authors="Sohom829, Sayln"
 description='''
 New ores, tools, biomes, dimensions, foods, items, enhanments 
