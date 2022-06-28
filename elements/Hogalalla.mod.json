@@ -27,7 +27,7 @@
     "bossBarColor": "RED",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
-      "value": ""
+      "value": "Items.DIAMOND_SWORD"
     },
     "equipmentOffHand": {
       "value": ""
@@ -80,7 +80,7 @@
       "value": "Blocks.NETHERITE_BLOCK"
     },
     "livingSound": {
-      "value": "entity.parrot.imitate.enderman"
+      "value": "entity.endermen.ambient"
     },
     "hurtSound": {
       "value": "entity.generic.hurt"

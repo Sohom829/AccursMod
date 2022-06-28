@@ -48,6 +48,12 @@ import net.mcreator.accurs.item.KayzePickaxeItem;
 import net.mcreator.accurs.item.KayzeHoeItem;
 import net.mcreator.accurs.item.KayzeAxeItem;
 import net.mcreator.accurs.item.KayzeArmorItem;
+import net.mcreator.accurs.item.EmeraldToolsSwordItem;
+import net.mcreator.accurs.item.EmeraldToolsShovelItem;
+import net.mcreator.accurs.item.EmeraldToolsPickaxeItem;
+import net.mcreator.accurs.item.EmeraldToolsHoeItem;
+import net.mcreator.accurs.item.EmeraldToolsAxeItem;
+import net.mcreator.accurs.item.EmeraldArmourArmorItem;
 import net.mcreator.accurs.AccursMod;
 
 public class AccursModItems {
@@ -143,6 +149,19 @@ public class AccursModItems {
 	public static final RegistryObject<Item> RUBY_ARMOR_CHESTPLATE = REGISTRY.register("ruby_armor_chestplate", () -> new RubyArmorItem.Chestplate());
 	public static final RegistryObject<Item> RUBY_ARMOR_LEGGINGS = REGISTRY.register("ruby_armor_leggings", () -> new RubyArmorItem.Leggings());
 	public static final RegistryObject<Item> RUBY_ARMOR_BOOTS = REGISTRY.register("ruby_armor_boots", () -> new RubyArmorItem.Boots());
+	public static final RegistryObject<Item> EMERALD_TOOLS_PICKAXE = REGISTRY.register("emerald_tools_pickaxe", () -> new EmeraldToolsPickaxeItem());
+	public static final RegistryObject<Item> EMERALD_TOOLS_AXE = REGISTRY.register("emerald_tools_axe", () -> new EmeraldToolsAxeItem());
+	public static final RegistryObject<Item> EMERALD_TOOLS_SWORD = REGISTRY.register("emerald_tools_sword", () -> new EmeraldToolsSwordItem());
+	public static final RegistryObject<Item> EMERALD_TOOLS_SHOVEL = REGISTRY.register("emerald_tools_shovel", () -> new EmeraldToolsShovelItem());
+	public static final RegistryObject<Item> EMERALD_TOOLS_HOE = REGISTRY.register("emerald_tools_hoe", () -> new EmeraldToolsHoeItem());
+	public static final RegistryObject<Item> EMERALD_ARMOUR_ARMOR_HELMET = REGISTRY.register("emerald_armour_armor_helmet",
+			() -> new EmeraldArmourArmorItem.Helmet());
+	public static final RegistryObject<Item> EMERALD_ARMOUR_ARMOR_CHESTPLATE = REGISTRY.register("emerald_armour_armor_chestplate",
+			() -> new EmeraldArmourArmorItem.Chestplate());
+	public static final RegistryObject<Item> EMERALD_ARMOUR_ARMOR_LEGGINGS = REGISTRY.register("emerald_armour_armor_leggings",
+			() -> new EmeraldArmourArmorItem.Leggings());
+	public static final RegistryObject<Item> EMERALD_ARMOUR_ARMOR_BOOTS = REGISTRY.register("emerald_armour_armor_boots",
+			() -> new EmeraldArmourArmorItem.Boots());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
