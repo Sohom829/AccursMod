@@ -14,7 +14,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
-import net.mcreator.accurs.item.UtyxItem;
 import net.mcreator.accurs.item.UtyxFluidItem;
 import net.mcreator.accurs.item.UcyaSwordItem;
 import net.mcreator.accurs.item.UcyaShovelItem;
@@ -165,7 +164,6 @@ public class AccursModItems {
 	public static final RegistryObject<Item> EMERALD_ARMOUR_ARMOR_BOOTS = REGISTRY.register("emerald_armour_armor_boots",
 			() -> new EmeraldArmourArmorItem.Boots());
 	public static final RegistryObject<Item> UTYX_FLUID_BUCKET = REGISTRY.register("utyx_fluid_bucket", () -> new UtyxFluidItem());
-	public static final RegistryObject<Item> UTYX = REGISTRY.register("utyx", () -> new UtyxItem());
 	public static final RegistryObject<Item> HELL_TREES_WOOD = block(AccursModBlocks.HELL_TREES_WOOD, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> HELL_TREES_LOG = block(AccursModBlocks.HELL_TREES_LOG, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> HELL_TREES_PLANKS = block(AccursModBlocks.HELL_TREES_PLANKS, CreativeModeTab.TAB_BUILDING_BLOCKS);

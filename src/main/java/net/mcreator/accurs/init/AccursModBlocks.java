@@ -10,7 +10,6 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.level.block.Block;
 
-import net.mcreator.accurs.block.UtyxPortalBlock;
 import net.mcreator.accurs.block.UtyxFluidBlock;
 import net.mcreator.accurs.block.UcyaOreBlock;
 import net.mcreator.accurs.block.UcyaBlockBlock;
@@ -100,7 +99,6 @@ public class AccursModBlocks {
 	public static final RegistryObject<Block> RUBY_ORE = REGISTRY.register("ruby_ore", () -> new RubyOreBlock());
 	public static final RegistryObject<Block> RUBY_BLOCK = REGISTRY.register("ruby_block", () -> new RubyBlockBlock());
 	public static final RegistryObject<Block> UTYX_FLUID = REGISTRY.register("utyx_fluid", () -> new UtyxFluidBlock());
-	public static final RegistryObject<Block> UTYX_PORTAL = REGISTRY.register("utyx_portal", () -> new UtyxPortalBlock());
 	public static final RegistryObject<Block> HELL_TREES_WOOD = REGISTRY.register("hell_trees_wood", () -> new HellTreesWoodBlock());
 	public static final RegistryObject<Block> HELL_TREES_LOG = REGISTRY.register("hell_trees_log", () -> new HellTreesLogBlock());
 	public static final RegistryObject<Block> HELL_TREES_PLANKS = REGISTRY.register("hell_trees_planks", () -> new HellTreesPlanksBlock());
