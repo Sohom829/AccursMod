@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 4,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:QuancyPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:QuancyPlanks"
+      },
+      {
+        "value": "CUSTOM:QuancyPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:QuancyPlanks"
+      },
+      {
+        "value": "CUSTOM:QuancyPlanks"
+      },
+      {
+        "value": "CUSTOM:QuancyPlanks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:QuancyStairs"
+    },
+    "name": "quancy_stairs_recipe",
+    "namespace": "mod"
+  }
+}

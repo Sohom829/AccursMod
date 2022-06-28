@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "accurs:quancy_planks"
+    },
+    "3": {
+      "item": "accurs:quancy_planks"
+    },
+    "4": {
+      "item": "accurs:quancy_planks"
+    },
+    "6": {
+      "item": "accurs:quancy_planks"
+    },
+    "7": {
+      "item": "accurs:quancy_planks"
+    },
+    "8": {
+      "item": "accurs:quancy_planks"
+    }
+  },
+  "result": {
+    "item": "accurs:quancy_stairs",
+    "count": 4
+  }
+}

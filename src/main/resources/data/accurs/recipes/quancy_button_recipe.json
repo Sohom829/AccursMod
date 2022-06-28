@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "accurs:quancy_planks"
+    }
+  ],
+  "result": {
+    "item": "accurs:quancy_button",
+    "count": 1
+  }
+}

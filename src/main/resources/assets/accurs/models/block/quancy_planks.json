@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "accurs:blocks/quancy_planks",
+    "particle": "accurs:blocks/quancy_planks"
+  }
+}

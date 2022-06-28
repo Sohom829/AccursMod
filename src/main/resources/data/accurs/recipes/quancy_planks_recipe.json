@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:quancy_log"
+    }
+  ],
+  "result": {
+    "item": "accurs:quancy_planks",
+    "count": 4
+  }
+}

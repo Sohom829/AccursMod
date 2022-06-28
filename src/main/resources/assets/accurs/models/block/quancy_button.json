@@ -1,0 +1,6 @@
+{
+  "parent": "block/button",
+  "textures": {
+    "texture": "accurs:blocks/quancy_planks"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "accurs:block/quancy_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "accurs:block/quancy_log"
+    },
+    "axis=z": {
+      "model": "accurs:block/quancy_log",
+      "x": 90
+    }
+  }
+}

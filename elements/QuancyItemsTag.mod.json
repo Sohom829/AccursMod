@@ -1,0 +1,20 @@
+{
+  "_fv": 28,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:QuancyWood"
+      },
+      {
+        "value": "CUSTOM:QuancyLog"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "quancy_log",
+    "namespace": "forge"
+  }
+}
