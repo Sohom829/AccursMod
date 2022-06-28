@@ -6,6 +6,9 @@
     "accurs:stea_planks",
     "accurs:tyco_wood",
     "accurs:tyco_log",
-    "accurs:tyco_planks"
+    "accurs:tyco_planks",
+    "accurs:quancy_wood",
+    "accurs:quancy_log",
+    "accurs:quancy_planks"
   ]
 }

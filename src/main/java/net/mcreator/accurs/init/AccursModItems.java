@@ -22,6 +22,13 @@ import net.mcreator.accurs.item.UcyaHoeItem;
 import net.mcreator.accurs.item.UcyaAxeItem;
 import net.mcreator.accurs.item.UcyaArmorItem;
 import net.mcreator.accurs.item.TycoStickItem;
+import net.mcreator.accurs.item.RubySwordItem;
+import net.mcreator.accurs.item.RubyShovelItem;
+import net.mcreator.accurs.item.RubyPickaxeItem;
+import net.mcreator.accurs.item.RubyItem;
+import net.mcreator.accurs.item.RubyHoeItem;
+import net.mcreator.accurs.item.RubyAxeItem;
+import net.mcreator.accurs.item.RubyArmorItem;
 import net.mcreator.accurs.item.RedstoneSwordItem;
 import net.mcreator.accurs.item.RedstoneShovelItem;
 import net.mcreator.accurs.item.RedstonePickaxeItem;
@@ -114,6 +121,28 @@ public class AccursModItems {
 	public static final RegistryObject<Item> UCYA_ARMOR_BOOTS = REGISTRY.register("ucya_armor_boots", () -> new UcyaArmorItem.Boots());
 	public static final RegistryObject<Item> HOGALALLA = REGISTRY.register("hogalalla_spawn_egg",
 			() -> new ForgeSpawnEggItem(AccursModEntities.HOGALALLA, -13434829, -16777216, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> QUANCY_WOOD = block(AccursModBlocks.QUANCY_WOOD, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> QUANCY_LOG = block(AccursModBlocks.QUANCY_LOG, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> QUANCY_PLANKS = block(AccursModBlocks.QUANCY_PLANKS, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> QUANCY_LEAVES = block(AccursModBlocks.QUANCY_LEAVES, CreativeModeTab.TAB_DECORATIONS);
+	public static final RegistryObject<Item> QUANCY_STAIRS = block(AccursModBlocks.QUANCY_STAIRS, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> QUANCY_SLAB = block(AccursModBlocks.QUANCY_SLAB, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> QUANCY_FENCE = block(AccursModBlocks.QUANCY_FENCE, CreativeModeTab.TAB_DECORATIONS);
+	public static final RegistryObject<Item> QUANCY_FENCE_GATE = block(AccursModBlocks.QUANCY_FENCE_GATE, CreativeModeTab.TAB_REDSTONE);
+	public static final RegistryObject<Item> QUANCY_PRESSURE_PLATE = block(AccursModBlocks.QUANCY_PRESSURE_PLATE, CreativeModeTab.TAB_REDSTONE);
+	public static final RegistryObject<Item> QUANCY_BUTTON = block(AccursModBlocks.QUANCY_BUTTON, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> RUBY = REGISTRY.register("ruby", () -> new RubyItem());
+	public static final RegistryObject<Item> RUBY_ORE = block(AccursModBlocks.RUBY_ORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> RUBY_BLOCK = block(AccursModBlocks.RUBY_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> RUBY_PICKAXE = REGISTRY.register("ruby_pickaxe", () -> new RubyPickaxeItem());
+	public static final RegistryObject<Item> RUBY_AXE = REGISTRY.register("ruby_axe", () -> new RubyAxeItem());
+	public static final RegistryObject<Item> RUBY_SWORD = REGISTRY.register("ruby_sword", () -> new RubySwordItem());
+	public static final RegistryObject<Item> RUBY_SHOVEL = REGISTRY.register("ruby_shovel", () -> new RubyShovelItem());
+	public static final RegistryObject<Item> RUBY_HOE = REGISTRY.register("ruby_hoe", () -> new RubyHoeItem());
+	public static final RegistryObject<Item> RUBY_ARMOR_HELMET = REGISTRY.register("ruby_armor_helmet", () -> new RubyArmorItem.Helmet());
+	public static final RegistryObject<Item> RUBY_ARMOR_CHESTPLATE = REGISTRY.register("ruby_armor_chestplate", () -> new RubyArmorItem.Chestplate());
+	public static final RegistryObject<Item> RUBY_ARMOR_LEGGINGS = REGISTRY.register("ruby_armor_leggings", () -> new RubyArmorItem.Leggings());
+	public static final RegistryObject<Item> RUBY_ARMOR_BOOTS = REGISTRY.register("ruby_armor_boots", () -> new RubyArmorItem.Boots());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

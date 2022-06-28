@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "accurs:ruby"
+    },
+    "1": {
+      "item": "accurs:ruby"
+    },
+    "2": {
+      "item": "accurs:ruby"
+    },
+    "3": {
+      "item": "accurs:ruby"
+    },
+    "5": {
+      "item": "accurs:ruby"
+    }
+  },
+  "result": {
+    "item": "accurs:ruby_armor_helmet",
+    "count": 1
+  }
+}

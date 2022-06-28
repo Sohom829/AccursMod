@@ -18,6 +18,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Holder;
 
 import net.mcreator.accurs.world.features.ores.UcyaOreFeature;
+import net.mcreator.accurs.world.features.ores.RubyOreFeature;
 import net.mcreator.accurs.world.features.ores.KayzerOreFeature;
 import net.mcreator.accurs.AccursMod;
 
@@ -34,6 +35,8 @@ public class AccursModFeatures {
 			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, KayzerOreFeature.GENERATE_BIOMES, KayzerOreFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> UCYA_ORE = register("ucya_ore", UcyaOreFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, UcyaOreFeature.GENERATE_BIOMES, UcyaOreFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> RUBY_ORE = register("ruby_ore", RubyOreFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, RubyOreFeature.GENERATE_BIOMES, RubyOreFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

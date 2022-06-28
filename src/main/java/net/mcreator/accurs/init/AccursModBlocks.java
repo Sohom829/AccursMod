@@ -32,6 +32,18 @@ import net.mcreator.accurs.block.SteaLeavesBlock;
 import net.mcreator.accurs.block.SteaFenceGateBlock;
 import net.mcreator.accurs.block.SteaFenceBlock;
 import net.mcreator.accurs.block.SteaButtonBlock;
+import net.mcreator.accurs.block.RubyOreBlock;
+import net.mcreator.accurs.block.RubyBlockBlock;
+import net.mcreator.accurs.block.QuancyWoodBlock;
+import net.mcreator.accurs.block.QuancyStairsBlock;
+import net.mcreator.accurs.block.QuancySlabBlock;
+import net.mcreator.accurs.block.QuancyPressurePlateBlock;
+import net.mcreator.accurs.block.QuancyPlanksBlock;
+import net.mcreator.accurs.block.QuancyLogBlock;
+import net.mcreator.accurs.block.QuancyLeavesBlock;
+import net.mcreator.accurs.block.QuancyFenceGateBlock;
+import net.mcreator.accurs.block.QuancyFenceBlock;
+import net.mcreator.accurs.block.QuancyButtonBlock;
 import net.mcreator.accurs.block.KayzerOreBlock;
 import net.mcreator.accurs.block.KayzerBlockBlock;
 import net.mcreator.accurs.AccursMod;
@@ -62,4 +74,17 @@ public class AccursModBlocks {
 	public static final RegistryObject<Block> TYCO_BUTTON = REGISTRY.register("tyco_button", () -> new TycoButtonBlock());
 	public static final RegistryObject<Block> UCYA_ORE = REGISTRY.register("ucya_ore", () -> new UcyaOreBlock());
 	public static final RegistryObject<Block> UCYA_BLOCK = REGISTRY.register("ucya_block", () -> new UcyaBlockBlock());
+	public static final RegistryObject<Block> QUANCY_WOOD = REGISTRY.register("quancy_wood", () -> new QuancyWoodBlock());
+	public static final RegistryObject<Block> QUANCY_LOG = REGISTRY.register("quancy_log", () -> new QuancyLogBlock());
+	public static final RegistryObject<Block> QUANCY_PLANKS = REGISTRY.register("quancy_planks", () -> new QuancyPlanksBlock());
+	public static final RegistryObject<Block> QUANCY_LEAVES = REGISTRY.register("quancy_leaves", () -> new QuancyLeavesBlock());
+	public static final RegistryObject<Block> QUANCY_STAIRS = REGISTRY.register("quancy_stairs", () -> new QuancyStairsBlock());
+	public static final RegistryObject<Block> QUANCY_SLAB = REGISTRY.register("quancy_slab", () -> new QuancySlabBlock());
+	public static final RegistryObject<Block> QUANCY_FENCE = REGISTRY.register("quancy_fence", () -> new QuancyFenceBlock());
+	public static final RegistryObject<Block> QUANCY_FENCE_GATE = REGISTRY.register("quancy_fence_gate", () -> new QuancyFenceGateBlock());
+	public static final RegistryObject<Block> QUANCY_PRESSURE_PLATE = REGISTRY.register("quancy_pressure_plate",
+			() -> new QuancyPressurePlateBlock());
+	public static final RegistryObject<Block> QUANCY_BUTTON = REGISTRY.register("quancy_button", () -> new QuancyButtonBlock());
+	public static final RegistryObject<Block> RUBY_ORE = REGISTRY.register("ruby_ore", () -> new RubyOreBlock());
+	public static final RegistryObject<Block> RUBY_BLOCK = REGISTRY.register("ruby_block", () -> new RubyBlockBlock());
 }

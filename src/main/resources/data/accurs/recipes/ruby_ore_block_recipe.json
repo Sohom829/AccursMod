@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "accurs:ruby"
+    },
+    "1": {
+      "item": "accurs:ruby"
+    },
+    "2": {
+      "item": "accurs:ruby"
+    },
+    "3": {
+      "item": "accurs:ruby"
+    },
+    "4": {
+      "item": "accurs:ruby"
+    },
+    "5": {
+      "item": "accurs:ruby"
+    },
+    "6": {
+      "item": "accurs:ruby"
+    },
+    "7": {
+      "item": "accurs:ruby"
+    },
+    "8": {
+      "item": "accurs:ruby"
+    }
+  },
+  "result": {
+    "item": "accurs:ruby_block",
+    "count": 1
+  }
+}
