@@ -12,7 +12,7 @@ A mod for everything
 - New Commands
 - New World Generation
 - New Structures
-- New Armours
+- New Armors
 - New Tools
 >
 # INSTALLATION
