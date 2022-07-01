@@ -8,12 +8,9 @@ A mod for everything
 - New Trees
 - New Ores
 - New Ingots
-- New Dimensions
-- New Commands
 - New World Generation
-- New Structures
 - New Armors
 - New Tools
 >
 # INSTALLATION
-Coming Soon
+[CurseForge](https://www.curseforge.com/minecraft/mc-mods/accurs)
