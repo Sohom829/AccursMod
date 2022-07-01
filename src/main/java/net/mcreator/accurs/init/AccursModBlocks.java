@@ -38,6 +38,8 @@ import net.mcreator.accurs.block.SteaLeavesBlock;
 import net.mcreator.accurs.block.SteaFenceGateBlock;
 import net.mcreator.accurs.block.SteaFenceBlock;
 import net.mcreator.accurs.block.SteaButtonBlock;
+import net.mcreator.accurs.block.SimsOreBlock;
+import net.mcreator.accurs.block.SimsBlockBlock;
 import net.mcreator.accurs.block.RubyOreBlock;
 import net.mcreator.accurs.block.RubyBlockBlock;
 import net.mcreator.accurs.block.QuancyWoodBlock;
@@ -165,6 +167,8 @@ public class AccursModBlocks {
 	public static final RegistryObject<Block> AZCUL_STONE = REGISTRY.register("azcul_stone", () -> new AzculStoneBlock());
 	public static final RegistryObject<Block> AZCUL_GRASS = REGISTRY.register("azcul_grass", () -> new AzculGrassBlock());
 	public static final RegistryObject<Block> PAIZON_LEAVES = REGISTRY.register("paizon_leaves", () -> new PaizonLeavesBlock());
+	public static final RegistryObject<Block> SIMS_ORE = REGISTRY.register("sims_ore", () -> new SimsOreBlock());
+	public static final RegistryObject<Block> SIMS_BLOCK = REGISTRY.register("sims_block", () -> new SimsBlockBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

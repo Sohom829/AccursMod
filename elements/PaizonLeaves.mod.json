@@ -8,13 +8,14 @@
     "textureFront": "quancy_leaves",
     "textureRight": "quancy_leaves",
     "textureBack": "paizonleaves",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "renderType": 11,
+    "customModelName": "Single texture",
     "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
+    "blockBase": "Leaves",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
@@ -52,7 +53,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "ROCK"
+      "value": "LEAVES"
     },
     "tickRate": 10,
     "tickRandomly": false,

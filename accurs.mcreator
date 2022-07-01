@@ -2314,6 +2314,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "sims_armor_boots_recipe"
+    },
+    {
+      "name": "TycsLootTable",
+      "type": "loottable",
+      "sortid": 278,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tycs_loot_table"
     }
   ],
   "variable_elements": [],

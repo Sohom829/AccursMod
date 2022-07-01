@@ -23,6 +23,13 @@ import net.mcreator.accurs.item.UcyaHoeItem;
 import net.mcreator.accurs.item.UcyaAxeItem;
 import net.mcreator.accurs.item.UcyaArmorItem;
 import net.mcreator.accurs.item.TycoStickItem;
+import net.mcreator.accurs.item.SimsSwordItem;
+import net.mcreator.accurs.item.SimsShovelItem;
+import net.mcreator.accurs.item.SimsPickaxeItem;
+import net.mcreator.accurs.item.SimsIngotItem;
+import net.mcreator.accurs.item.SimsHoeItem;
+import net.mcreator.accurs.item.SimsAxeItem;
+import net.mcreator.accurs.item.SimsArmorItem;
 import net.mcreator.accurs.item.RubySwordItem;
 import net.mcreator.accurs.item.RubyShovelItem;
 import net.mcreator.accurs.item.RubyPickaxeItem;
@@ -216,6 +223,18 @@ public class AccursModItems {
 	public static final RegistryObject<Item> AZCUL_STONE = block(AccursModBlocks.AZCUL_STONE, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> AZCUL_GRASS = block(AccursModBlocks.AZCUL_GRASS, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> PAIZON_LEAVES = block(AccursModBlocks.PAIZON_LEAVES, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> SIMS_INGOT = REGISTRY.register("sims_ingot", () -> new SimsIngotItem());
+	public static final RegistryObject<Item> SIMS_ORE = block(AccursModBlocks.SIMS_ORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> SIMS_BLOCK = block(AccursModBlocks.SIMS_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> SIMS_PICKAXE = REGISTRY.register("sims_pickaxe", () -> new SimsPickaxeItem());
+	public static final RegistryObject<Item> SIMS_AXE = REGISTRY.register("sims_axe", () -> new SimsAxeItem());
+	public static final RegistryObject<Item> SIMS_SWORD = REGISTRY.register("sims_sword", () -> new SimsSwordItem());
+	public static final RegistryObject<Item> SIMS_SHOVEL = REGISTRY.register("sims_shovel", () -> new SimsShovelItem());
+	public static final RegistryObject<Item> SIMS_HOE = REGISTRY.register("sims_hoe", () -> new SimsHoeItem());
+	public static final RegistryObject<Item> SIMS_ARMOR_HELMET = REGISTRY.register("sims_armor_helmet", () -> new SimsArmorItem.Helmet());
+	public static final RegistryObject<Item> SIMS_ARMOR_CHESTPLATE = REGISTRY.register("sims_armor_chestplate", () -> new SimsArmorItem.Chestplate());
+	public static final RegistryObject<Item> SIMS_ARMOR_LEGGINGS = REGISTRY.register("sims_armor_leggings", () -> new SimsArmorItem.Leggings());
+	public static final RegistryObject<Item> SIMS_ARMOR_BOOTS = REGISTRY.register("sims_armor_boots", () -> new SimsArmorItem.Boots());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

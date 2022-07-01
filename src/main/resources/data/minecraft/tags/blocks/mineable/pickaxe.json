@@ -6,6 +6,8 @@
     "accurs:ucya_ore",
     "accurs:ucya_block",
     "accurs:ruby_ore",
-    "accurs:ruby_block"
+    "accurs:ruby_block",
+    "accurs:sims_ore",
+    "accurs:sims_block"
   ]
 }
