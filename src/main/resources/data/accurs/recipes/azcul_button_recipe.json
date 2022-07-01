@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "accurs:azcul_planks"
+    }
+  ],
+  "result": {
+    "item": "accurs:azcul_button",
+    "count": 1
+  }
+}

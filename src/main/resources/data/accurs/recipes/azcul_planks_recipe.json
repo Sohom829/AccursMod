@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:azcul_log"
+    }
+  ],
+  "result": {
+    "item": "accurs:azcul_planks",
+    "count": 4
+  }
+}

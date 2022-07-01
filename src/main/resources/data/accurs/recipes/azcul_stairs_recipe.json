@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "accurs:azcul_planks"
+    },
+    "3": {
+      "item": "accurs:azcul_planks"
+    },
+    "4": {
+      "item": "accurs:azcul_planks"
+    },
+    "6": {
+      "item": "accurs:azcul_planks"
+    },
+    "7": {
+      "item": "accurs:azcul_planks"
+    },
+    "8": {
+      "item": "accurs:azcul_planks"
+    }
+  },
+  "result": {
+    "item": "accurs:azcul_stairs",
+    "count": 4
+  }
+}

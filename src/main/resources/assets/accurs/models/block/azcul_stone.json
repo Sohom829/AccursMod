@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "accurs:blocks/azculstone",
+    "up": "accurs:blocks/azculstone",
+    "north": "accurs:blocks/azculstone",
+    "east": "accurs:blocks/azculstone",
+    "south": "accurs:blocks/azculstone",
+    "west": "accurs:blocks/azculstone",
+    "particle": "accurs:blocks/azculstone"
+  }
+}

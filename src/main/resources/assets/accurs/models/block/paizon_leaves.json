@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "accurs:blocks/paizonleaves",
+    "up": "accurs:blocks/quancy_leaves",
+    "north": "accurs:blocks/quancy_leaves",
+    "east": "accurs:blocks/paizonleaves",
+    "south": "accurs:blocks/paizonleaves",
+    "west": "accurs:blocks/quancy_leaves",
+    "particle": "accurs:blocks/paizonleaves"
+  }
+}

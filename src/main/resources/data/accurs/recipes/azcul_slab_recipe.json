@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "accurs:azcul_planks"
+    },
+    "1": {
+      "item": "accurs:azcul_planks"
+    },
+    "2": {
+      "item": "accurs:azcul_planks"
+    }
+  },
+  "result": {
+    "item": "accurs:azcul_slab",
+    "count": 6
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:biyon_log"
+    }
+  ],
+  "result": {
+    "item": "accurs:biyon_planks",
+    "count": 4
+  }
+}

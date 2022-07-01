@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "accurs:blocks/biyon_log_top",
+    "up": "accurs:blocks/biyon_log_top",
+    "north": "accurs:blocks/biyon_log_side",
+    "east": "accurs:blocks/biyon_log_side",
+    "south": "accurs:blocks/biyon_log_side",
+    "west": "accurs:blocks/biyon_log_side",
+    "particle": "accurs:blocks/biyon_log_top"
+  }
+}

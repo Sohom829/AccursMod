@@ -1,0 +1,20 @@
+{
+  "_fv": 28,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:AzculWood"
+      },
+      {
+        "value": "CUSTOM:AzculLog"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "azcul_log",
+    "namespace": "forge"
+  }
+}

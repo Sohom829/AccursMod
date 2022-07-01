@@ -48,7 +48,7 @@ import java.util.List;
 
 public class HellBiome {
 	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(-1.428571428571f, 1.428571428571f),
-			Climate.Parameter.span(-1.428571428571f, 1.428571428571f), Climate.Parameter.span(-0.918571428571f, 1.938571428571f),
+			Climate.Parameter.span(-2.428571428571f, 0.428571428571f), Climate.Parameter.span(-0.918571428571f, 1.938571428571f),
 			Climate.Parameter.span(-0.628571428571f, 2.228571428571f), Climate.Parameter.point(0),
 			Climate.Parameter.span(-1.506111998629f, 1.351030858513f), 0);
 
@@ -91,8 +91,8 @@ public class HellBiome {
 		BiomeDefaultFeatures.addSurfaceFreezing(biomeGenerationSettings);
 		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder();
 		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(AccursModEntities.HOGALALLA.get(), 20, 1, 1));
-		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.RAIN).biomeCategory(Biome.BiomeCategory.NETHER).temperature(0.5f)
-				.downfall(0.5f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build())
+		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.NONE).biomeCategory(Biome.BiomeCategory.NETHER).temperature(0.5f)
+				.downfall(0f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build())
 				.build();
 	}
 

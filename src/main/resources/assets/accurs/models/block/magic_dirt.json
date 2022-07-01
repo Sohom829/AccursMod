@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "accurs:blocks/magicgrasstop",
+    "up": "accurs:blocks/magicgrasstop",
+    "north": "accurs:blocks/magicgrasstop",
+    "east": "accurs:blocks/magicgrasstop",
+    "south": "accurs:blocks/magicgrasstop",
+    "west": "accurs:blocks/magicgrasstop",
+    "particle": "accurs:blocks/magicgrasstop"
+  }
+}

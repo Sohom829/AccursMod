@@ -31,7 +31,10 @@ import net.minecraft.core.Registry;
 import net.minecraft.core.Holder;
 
 import net.mcreator.accurs.world.biome.SteaBiome;
+import net.mcreator.accurs.world.biome.PaizonBiome;
+import net.mcreator.accurs.world.biome.IsainBiome;
 import net.mcreator.accurs.world.biome.HellBiome;
+import net.mcreator.accurs.world.biome.AzculBiome;
 import net.mcreator.accurs.AccursMod;
 
 import java.util.Map;
@@ -45,12 +48,18 @@ public class AccursModBiomes {
 	public static final DeferredRegister<Biome> REGISTRY = DeferredRegister.create(ForgeRegistries.BIOMES, AccursMod.MODID);
 	public static final RegistryObject<Biome> STEA = REGISTRY.register("stea", () -> SteaBiome.createBiome());
 	public static final RegistryObject<Biome> HELL = REGISTRY.register("hell", () -> HellBiome.createBiome());
+	public static final RegistryObject<Biome> ISAIN = REGISTRY.register("isain", () -> IsainBiome.createBiome());
+	public static final RegistryObject<Biome> AZCUL = REGISTRY.register("azcul", () -> AzculBiome.createBiome());
+	public static final RegistryObject<Biome> PAIZON = REGISTRY.register("paizon", () -> PaizonBiome.createBiome());
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			SteaBiome.init();
 			HellBiome.init();
+			IsainBiome.init();
+			AzculBiome.init();
+			PaizonBiome.init();
 		});
 	}
 
@@ -73,6 +82,12 @@ public class AccursModBiomes {
 								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, STEA.getId()))));
 						parameters.add(new Pair<>(HellBiome.PARAMETER_POINT,
 								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, HELL.getId()))));
+						parameters.add(new Pair<>(IsainBiome.PARAMETER_POINT,
+								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, ISAIN.getId()))));
+						parameters.add(new Pair<>(AzculBiome.PARAMETER_POINT,
+								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, AZCUL.getId()))));
+						parameters.add(new Pair<>(PaizonBiome.PARAMETER_POINT,
+								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, PAIZON.getId()))));
 
 						MultiNoiseBiomeSource moddedNoiseSource = new MultiNoiseBiomeSource(new Climate.ParameterList<>(parameters),
 								noiseSource.preset);
@@ -89,6 +104,15 @@ public class AccursModBiomes {
 									Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.STONE.defaultBlockState(), Blocks.WATER.defaultBlockState()));
 							surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, HELL.getId()),
 									Blocks.NETHERRACK.defaultBlockState(), Blocks.BASALT.defaultBlockState(), Blocks.LAVA.defaultBlockState()));
+							surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, ISAIN.getId()),
+									AccursModBlocks.MAGIC_GRASS.get().defaultBlockState(), AccursModBlocks.MAGIC_DIRT.get().defaultBlockState(),
+									AccursModBlocks.MAGIC_DIRT.get().defaultBlockState()));
+							surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, AZCUL.getId()),
+									AccursModBlocks.AZCUL_GRASS.get().defaultBlockState(), AccursModBlocks.AZCUL_STONE.get().defaultBlockState(),
+									AccursModBlocks.AZCUL_STONE.get().defaultBlockState()));
+							surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, PAIZON.getId()),
+									AccursModBlocks.MAGIC_GRASS.get().defaultBlockState(), AccursModBlocks.MAGIC_DIRT.get().defaultBlockState(),
+									AccursModBlocks.MAGIC_DIRT.get().defaultBlockState()));
 							NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(),
 									noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),
 									noiseGeneratorSettings.noiseRouter(),

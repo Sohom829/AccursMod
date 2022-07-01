@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "accurs:block/biyon_slab"
+    },
+    "type=top": {
+      "model": "accurs:block/biyon_slab_top"
+    },
+    "type=double": {
+      "model": "accurs:block/biyon_slab_full"
+    }
+  }
+}

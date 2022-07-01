@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "accurs:blocks/azcul_planks",
+    "particle": "accurs:blocks/azcul_planks"
+  }
+}

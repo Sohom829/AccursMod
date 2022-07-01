@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "accurs:biyon_planks"
+    }
+  ],
+  "result": {
+    "item": "accurs:biyon_button",
+    "count": 1
+  }
+}

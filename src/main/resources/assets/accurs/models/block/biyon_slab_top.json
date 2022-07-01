@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "bottom": "accurs:blocks/biyon_planks",
+    "top": "accurs:blocks/biyon_planks",
+    "side": "accurs:blocks/biyon_planks"
+  }
+}

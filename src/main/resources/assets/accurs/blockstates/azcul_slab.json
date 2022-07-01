@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "accurs:block/azcul_slab"
+    },
+    "type=top": {
+      "model": "accurs:block/azcul_slab_top"
+    },
+    "type=double": {
+      "model": "accurs:block/azcul_slab_full"
+    }
+  }
+}

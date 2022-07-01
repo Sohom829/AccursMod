@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "accurs:biyon_planks"
+    },
+    "1": {
+      "item": "accurs:biyon_planks"
+    },
+    "2": {
+      "item": "accurs:biyon_planks"
+    }
+  },
+  "result": {
+    "item": "accurs:biyon_slab",
+    "count": 6
+  }
+}

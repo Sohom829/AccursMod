@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "accurs:blocks/azcul_log_top",
+    "up": "accurs:blocks/azcul_log_top",
+    "north": "accurs:blocks/azcul_log_side",
+    "east": "accurs:blocks/azcul_log_side",
+    "south": "accurs:blocks/azcul_log_side",
+    "west": "accurs:blocks/azcul_log_side",
+    "particle": "accurs:blocks/azcul_log_top"
+  }
+}

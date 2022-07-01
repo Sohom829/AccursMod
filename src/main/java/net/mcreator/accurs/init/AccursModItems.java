@@ -55,6 +55,12 @@ import net.mcreator.accurs.item.EmeraldToolsPickaxeItem;
 import net.mcreator.accurs.item.EmeraldToolsHoeItem;
 import net.mcreator.accurs.item.EmeraldToolsAxeItem;
 import net.mcreator.accurs.item.EmeraldArmourArmorItem;
+import net.mcreator.accurs.item.CopperSwordItem;
+import net.mcreator.accurs.item.CopperShovelItem;
+import net.mcreator.accurs.item.CopperPickaxeItem;
+import net.mcreator.accurs.item.CopperHoeItem;
+import net.mcreator.accurs.item.CopperAxeItem;
+import net.mcreator.accurs.item.CopperArmorItem;
 import net.mcreator.accurs.AccursMod;
 
 public class AccursModItems {
@@ -175,6 +181,41 @@ public class AccursModItems {
 	public static final RegistryObject<Item> HELL_TREES_PRESSURE_PLATE = block(AccursModBlocks.HELL_TREES_PRESSURE_PLATE,
 			CreativeModeTab.TAB_REDSTONE);
 	public static final RegistryObject<Item> HELL_TREES_BUTTON = block(AccursModBlocks.HELL_TREES_BUTTON, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> COPPER_PICKAXE = REGISTRY.register("copper_pickaxe", () -> new CopperPickaxeItem());
+	public static final RegistryObject<Item> COPPER_AXE = REGISTRY.register("copper_axe", () -> new CopperAxeItem());
+	public static final RegistryObject<Item> COPPER_SWORD = REGISTRY.register("copper_sword", () -> new CopperSwordItem());
+	public static final RegistryObject<Item> COPPER_SHOVEL = REGISTRY.register("copper_shovel", () -> new CopperShovelItem());
+	public static final RegistryObject<Item> COPPER_HOE = REGISTRY.register("copper_hoe", () -> new CopperHoeItem());
+	public static final RegistryObject<Item> COPPER_ARMOR_HELMET = REGISTRY.register("copper_armor_helmet", () -> new CopperArmorItem.Helmet());
+	public static final RegistryObject<Item> COPPER_ARMOR_CHESTPLATE = REGISTRY.register("copper_armor_chestplate",
+			() -> new CopperArmorItem.Chestplate());
+	public static final RegistryObject<Item> COPPER_ARMOR_LEGGINGS = REGISTRY.register("copper_armor_leggings", () -> new CopperArmorItem.Leggings());
+	public static final RegistryObject<Item> COPPER_ARMOR_BOOTS = REGISTRY.register("copper_armor_boots", () -> new CopperArmorItem.Boots());
+	public static final RegistryObject<Item> BIYON_WOOD = block(AccursModBlocks.BIYON_WOOD, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> BIYON_LOG = block(AccursModBlocks.BIYON_LOG, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> BIYON_PLANKS = block(AccursModBlocks.BIYON_PLANKS, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> BIYON_LEAVES = block(AccursModBlocks.BIYON_LEAVES, CreativeModeTab.TAB_DECORATIONS);
+	public static final RegistryObject<Item> BIYON_STAIRS = block(AccursModBlocks.BIYON_STAIRS, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> BIYON_SLAB = block(AccursModBlocks.BIYON_SLAB, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> BIYON_FENCE = block(AccursModBlocks.BIYON_FENCE, CreativeModeTab.TAB_DECORATIONS);
+	public static final RegistryObject<Item> BIYON_FENCE_GATE = block(AccursModBlocks.BIYON_FENCE_GATE, CreativeModeTab.TAB_REDSTONE);
+	public static final RegistryObject<Item> BIYON_PRESSURE_PLATE = block(AccursModBlocks.BIYON_PRESSURE_PLATE, CreativeModeTab.TAB_REDSTONE);
+	public static final RegistryObject<Item> BIYON_BUTTON = block(AccursModBlocks.BIYON_BUTTON, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> MAGIC_GRASS = block(AccursModBlocks.MAGIC_GRASS, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> MAGIC_DIRT = block(AccursModBlocks.MAGIC_DIRT, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> AZCUL_WOOD = block(AccursModBlocks.AZCUL_WOOD, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> AZCUL_LOG = block(AccursModBlocks.AZCUL_LOG, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> AZCUL_PLANKS = block(AccursModBlocks.AZCUL_PLANKS, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> AZCUL_LEAVES = block(AccursModBlocks.AZCUL_LEAVES, CreativeModeTab.TAB_DECORATIONS);
+	public static final RegistryObject<Item> AZCUL_STAIRS = block(AccursModBlocks.AZCUL_STAIRS, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> AZCUL_SLAB = block(AccursModBlocks.AZCUL_SLAB, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> AZCUL_FENCE = block(AccursModBlocks.AZCUL_FENCE, CreativeModeTab.TAB_DECORATIONS);
+	public static final RegistryObject<Item> AZCUL_FENCE_GATE = block(AccursModBlocks.AZCUL_FENCE_GATE, CreativeModeTab.TAB_REDSTONE);
+	public static final RegistryObject<Item> AZCUL_PRESSURE_PLATE = block(AccursModBlocks.AZCUL_PRESSURE_PLATE, CreativeModeTab.TAB_REDSTONE);
+	public static final RegistryObject<Item> AZCUL_BUTTON = block(AccursModBlocks.AZCUL_BUTTON, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> AZCUL_STONE = block(AccursModBlocks.AZCUL_STONE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> AZCUL_GRASS = block(AccursModBlocks.AZCUL_GRASS, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> PAIZON_LEAVES = block(AccursModBlocks.PAIZON_LEAVES, CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

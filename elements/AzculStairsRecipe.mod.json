@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 4,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:AzculPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:AzculPlanks"
+      },
+      {
+        "value": "CUSTOM:AzculPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:AzculPlanks"
+      },
+      {
+        "value": "CUSTOM:AzculPlanks"
+      },
+      {
+        "value": "CUSTOM:AzculPlanks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:AzculStairs"
+    },
+    "name": "azcul_stairs_recipe",
+    "namespace": "mod"
+  }
+}

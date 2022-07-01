@@ -7,6 +7,11 @@ package net.mcreator.accurs.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.client.event.ColorHandlerEvent;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
@@ -45,6 +50,9 @@ import net.mcreator.accurs.block.QuancyLeavesBlock;
 import net.mcreator.accurs.block.QuancyFenceGateBlock;
 import net.mcreator.accurs.block.QuancyFenceBlock;
 import net.mcreator.accurs.block.QuancyButtonBlock;
+import net.mcreator.accurs.block.PaizonLeavesBlock;
+import net.mcreator.accurs.block.MagicGrassBlock;
+import net.mcreator.accurs.block.MagicDirtBlock;
 import net.mcreator.accurs.block.KayzerOreBlock;
 import net.mcreator.accurs.block.KayzerBlockBlock;
 import net.mcreator.accurs.block.HellTreesWoodBlock;
@@ -57,6 +65,28 @@ import net.mcreator.accurs.block.HellTreesLeavesBlock;
 import net.mcreator.accurs.block.HellTreesFenceGateBlock;
 import net.mcreator.accurs.block.HellTreesFenceBlock;
 import net.mcreator.accurs.block.HellTreesButtonBlock;
+import net.mcreator.accurs.block.BiyonWoodBlock;
+import net.mcreator.accurs.block.BiyonStairsBlock;
+import net.mcreator.accurs.block.BiyonSlabBlock;
+import net.mcreator.accurs.block.BiyonPressurePlateBlock;
+import net.mcreator.accurs.block.BiyonPlanksBlock;
+import net.mcreator.accurs.block.BiyonLogBlock;
+import net.mcreator.accurs.block.BiyonLeavesBlock;
+import net.mcreator.accurs.block.BiyonFenceGateBlock;
+import net.mcreator.accurs.block.BiyonFenceBlock;
+import net.mcreator.accurs.block.BiyonButtonBlock;
+import net.mcreator.accurs.block.AzculWoodBlock;
+import net.mcreator.accurs.block.AzculStoneBlock;
+import net.mcreator.accurs.block.AzculStairsBlock;
+import net.mcreator.accurs.block.AzculSlabBlock;
+import net.mcreator.accurs.block.AzculPressurePlateBlock;
+import net.mcreator.accurs.block.AzculPlanksBlock;
+import net.mcreator.accurs.block.AzculLogBlock;
+import net.mcreator.accurs.block.AzculLeavesBlock;
+import net.mcreator.accurs.block.AzculGrassBlock;
+import net.mcreator.accurs.block.AzculFenceGateBlock;
+import net.mcreator.accurs.block.AzculFenceBlock;
+import net.mcreator.accurs.block.AzculButtonBlock;
 import net.mcreator.accurs.AccursMod;
 
 public class AccursModBlocks {
@@ -110,4 +140,42 @@ public class AccursModBlocks {
 	public static final RegistryObject<Block> HELL_TREES_PRESSURE_PLATE = REGISTRY.register("hell_trees_pressure_plate",
 			() -> new HellTreesPressurePlateBlock());
 	public static final RegistryObject<Block> HELL_TREES_BUTTON = REGISTRY.register("hell_trees_button", () -> new HellTreesButtonBlock());
+	public static final RegistryObject<Block> BIYON_WOOD = REGISTRY.register("biyon_wood", () -> new BiyonWoodBlock());
+	public static final RegistryObject<Block> BIYON_LOG = REGISTRY.register("biyon_log", () -> new BiyonLogBlock());
+	public static final RegistryObject<Block> BIYON_PLANKS = REGISTRY.register("biyon_planks", () -> new BiyonPlanksBlock());
+	public static final RegistryObject<Block> BIYON_LEAVES = REGISTRY.register("biyon_leaves", () -> new BiyonLeavesBlock());
+	public static final RegistryObject<Block> BIYON_STAIRS = REGISTRY.register("biyon_stairs", () -> new BiyonStairsBlock());
+	public static final RegistryObject<Block> BIYON_SLAB = REGISTRY.register("biyon_slab", () -> new BiyonSlabBlock());
+	public static final RegistryObject<Block> BIYON_FENCE = REGISTRY.register("biyon_fence", () -> new BiyonFenceBlock());
+	public static final RegistryObject<Block> BIYON_FENCE_GATE = REGISTRY.register("biyon_fence_gate", () -> new BiyonFenceGateBlock());
+	public static final RegistryObject<Block> BIYON_PRESSURE_PLATE = REGISTRY.register("biyon_pressure_plate", () -> new BiyonPressurePlateBlock());
+	public static final RegistryObject<Block> BIYON_BUTTON = REGISTRY.register("biyon_button", () -> new BiyonButtonBlock());
+	public static final RegistryObject<Block> MAGIC_GRASS = REGISTRY.register("magic_grass", () -> new MagicGrassBlock());
+	public static final RegistryObject<Block> MAGIC_DIRT = REGISTRY.register("magic_dirt", () -> new MagicDirtBlock());
+	public static final RegistryObject<Block> AZCUL_WOOD = REGISTRY.register("azcul_wood", () -> new AzculWoodBlock());
+	public static final RegistryObject<Block> AZCUL_LOG = REGISTRY.register("azcul_log", () -> new AzculLogBlock());
+	public static final RegistryObject<Block> AZCUL_PLANKS = REGISTRY.register("azcul_planks", () -> new AzculPlanksBlock());
+	public static final RegistryObject<Block> AZCUL_LEAVES = REGISTRY.register("azcul_leaves", () -> new AzculLeavesBlock());
+	public static final RegistryObject<Block> AZCUL_STAIRS = REGISTRY.register("azcul_stairs", () -> new AzculStairsBlock());
+	public static final RegistryObject<Block> AZCUL_SLAB = REGISTRY.register("azcul_slab", () -> new AzculSlabBlock());
+	public static final RegistryObject<Block> AZCUL_FENCE = REGISTRY.register("azcul_fence", () -> new AzculFenceBlock());
+	public static final RegistryObject<Block> AZCUL_FENCE_GATE = REGISTRY.register("azcul_fence_gate", () -> new AzculFenceGateBlock());
+	public static final RegistryObject<Block> AZCUL_PRESSURE_PLATE = REGISTRY.register("azcul_pressure_plate", () -> new AzculPressurePlateBlock());
+	public static final RegistryObject<Block> AZCUL_BUTTON = REGISTRY.register("azcul_button", () -> new AzculButtonBlock());
+	public static final RegistryObject<Block> AZCUL_STONE = REGISTRY.register("azcul_stone", () -> new AzculStoneBlock());
+	public static final RegistryObject<Block> AZCUL_GRASS = REGISTRY.register("azcul_grass", () -> new AzculGrassBlock());
+	public static final RegistryObject<Block> PAIZON_LEAVES = REGISTRY.register("paizon_leaves", () -> new PaizonLeavesBlock());
+
+	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+	public static class ClientSideHandler {
+		@SubscribeEvent
+		public static void clientSetup(FMLClientSetupEvent event) {
+		}
+
+		@SubscribeEvent
+		public static void blockColorLoad(ColorHandlerEvent.Block event) {
+			MagicGrassBlock.blockColorLoad(event);
+			MagicDirtBlock.blockColorLoad(event);
+		}
+	}
 }

@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "accurs:biyon_planks"
+    },
+    "3": {
+      "item": "accurs:biyon_planks"
+    },
+    "4": {
+      "item": "accurs:biyon_planks"
+    },
+    "6": {
+      "item": "accurs:biyon_planks"
+    },
+    "7": {
+      "item": "accurs:biyon_planks"
+    },
+    "8": {
+      "item": "accurs:biyon_planks"
+    }
+  },
+  "result": {
+    "item": "accurs:biyon_stairs",
+    "count": 4
+  }
+}

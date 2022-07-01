@@ -26,6 +26,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.accurs.init.AccursModParticleTypes;
 import net.mcreator.accurs.init.AccursModItems;
 import net.mcreator.accurs.init.AccursModFluids;
 import net.mcreator.accurs.init.AccursModFeatures;
@@ -57,7 +58,7 @@ public class AccursMod {
 		AccursModFluids.REGISTRY.register(bus);
 
 		AccursModBiomes.REGISTRY.register(bus);
-
+		AccursModParticleTypes.REGISTRY.register(bus);
 	}
 
 	public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder,
