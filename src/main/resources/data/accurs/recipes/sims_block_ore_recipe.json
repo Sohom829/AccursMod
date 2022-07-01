@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "accurs:sims_block"
+    }
+  ],
+  "result": {
+    "item": "accurs:sims_ingot",
+    "count": 9
+  }
+}

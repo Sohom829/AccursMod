@@ -2140,6 +2140,180 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "paizon"
+    },
+    {
+      "name": "SimsIngot",
+      "type": "item",
+      "sortid": 257,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sims_ingot"
+    },
+    {
+      "name": "SimsOre",
+      "type": "block",
+      "sortid": 258,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sims_ore"
+    },
+    {
+      "name": "SimsBlock",
+      "type": "block",
+      "sortid": 259,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sims_block"
+    },
+    {
+      "name": "SimsOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 260,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sims_ore_block_recipe"
+    },
+    {
+      "name": "SimsBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 261,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sims_block_ore_recipe"
+    },
+    {
+      "name": "SimsOreSmelting",
+      "type": "recipe",
+      "sortid": 262,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sims_ore_smelting"
+    },
+    {
+      "name": "SimsPickaxe",
+      "type": "tool",
+      "sortid": 263,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sims_pickaxe"
+    },
+    {
+      "name": "SimsAxe",
+      "type": "tool",
+      "sortid": 264,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sims_axe"
+    },
+    {
+      "name": "SimsSword",
+      "type": "tool",
+      "sortid": 265,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sims_sword"
+    },
+    {
+      "name": "SimsShovel",
+      "type": "tool",
+      "sortid": 266,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sims_shovel"
+    },
+    {
+      "name": "SimsHoe",
+      "type": "tool",
+      "sortid": 267,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sims_hoe"
+    },
+    {
+      "name": "SimsPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 268,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sims_pickaxe_recipe"
+    },
+    {
+      "name": "SimsAxeRecipe",
+      "type": "recipe",
+      "sortid": 269,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sims_axe_recipe"
+    },
+    {
+      "name": "SimsSwordRecipe",
+      "type": "recipe",
+      "sortid": 270,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sims_sword_recipe"
+    },
+    {
+      "name": "SimsShovelRecipe",
+      "type": "recipe",
+      "sortid": 271,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sims_shovel_recipe"
+    },
+    {
+      "name": "SimsHoeRecipe",
+      "type": "recipe",
+      "sortid": 272,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sims_hoe_recipe"
+    },
+    {
+      "name": "SimsArmor",
+      "type": "armor",
+      "sortid": 273,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sims_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "SimsArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 274,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sims_armor_helmet_recipe"
+    },
+    {
+      "name": "SimsArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 275,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sims_armor_body_recipe"
+    },
+    {
+      "name": "SimsArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 276,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sims_armor_leggings_recipe"
+    },
+    {
+      "name": "SimsArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 277,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sims_armor_boots_recipe"
     }
   ],
   "variable_elements": [],
@@ -2176,8 +2350,11 @@
       "item.accurs.kayzer": "Kayzer",
       "item.accurs.copper_pickaxe": "Copper Pickaxe",
       "item.accurs.ucya_armor_leggings": "Ucya Leggings",
+      "block.accurs.sims_block": "Block of Sims",
       "item.accurs.copper_hoe": "Copper Hoe",
       "block.accurs.stea_pressure_plate": "Stea Pressure Plate",
+      "item.accurs.sims_pickaxe": "Sims Pickaxe",
+      "item.accurs.sims_hoe": "Sims Hoe",
       "item.accurs.ucya_ingot": "Ucya",
       "item.accurs.emerald_armour_armor_helmet": "EmeraldArmour Helmet",
       "item.accurs.lapis_armor_helmet": "Lapis Helmet",
@@ -2239,18 +2416,22 @@
       "item.accurs.kayze_armor_leggings": "Kayze Leggings",
       "item.accurs.ruby_armor_boots": "Ruby Boots",
       "item.accurs.tyco_stick": "Tyco Stick",
+      "item.accurs.sims_ingot": "Sims",
       "block.accurs.kayzer_ore": "Kayzer Ore",
       "biome.accurs.stea": "Stea",
       "block.accurs.azcul_wood": "Azcul Wood",
       "item.accurs.emerald_armour_armor_boots": "EmeraldArmour Boots",
       "block.accurs.tyco_slab": "Tyco Slab",
       "item.accurs.ruby_armor_chestplate": "Ruby Chestplate",
+      "item.accurs.sims_sword": "Sims Sword",
       "block.accurs.quancy_slab": "Quancy Slab",
       "item.accurs.lapis_axe": "Lapis Axe",
       "item.accurs.emerald_armour_armor_chestplate": "EmeraldArmour Chestplate",
       "advancements.wow_emreald_tools.descr": "Craft Emereald Tools",
       "block.accurs.azcul_pressure_plate": "Azcul Pressure Plate",
       "item.accurs.kayze_shovel": "Kayze Shovel",
+      "item.accurs.sims_armor_boots": "Sims Boots",
+      "item.accurs.sims_shovel": "Sims Shovel",
       "block.accurs.stea_leaves": "Stea Leaves",
       "block.accurs.ruby_block": "Block of Ruby",
       "block.accurs.quancy_planks": "Quancy Planks",
@@ -2264,6 +2445,7 @@
       "item.accurs.emerald_tools_axe": "EmeraldTools Axe",
       "block.accurs.biyon_pressure_plate": "Biyon Pressure Plate",
       "item.accurs.copper_armor_helmet": "Copper Helmet",
+      "item.accurs.sims_axe": "Sims Axe",
       "block.accurs.biyon_fence_gate": "Biyon Fence Gate",
       "block.accurs.hell_trees_pressure_plate": "HellTrees Pressure Plate",
       "item.accurs.redstone_armor_boots": "Redstone Boots",
@@ -2273,6 +2455,8 @@
       "advancements.isnt_it_lapis_pick.title": "Isn\u0027t It Lapis Pick?",
       "block.accurs.biyon_planks": "Biyon Planks",
       "block.accurs.azcul_stairs": "Azcul Stairs",
+      "item.accurs.sims_armor_helmet": "Sims Helmet",
+      "item.accurs.sims_armor_chestplate": "Sims Chestplate",
       "item.accurs.redstone_pickaxe": "Redstone Pickaxe",
       "item.accurs.redstone_shovel": "Redstone Shovel",
       "item.accurs.utyx_fluid_bucket": "Utyx Fluid Bucket",
@@ -2288,6 +2472,7 @@
       "item.accurs.ruby_sword": "Ruby Sword",
       "item.accurs.copper_armor_leggings": "Copper Leggings",
       "item.accurs.ruby_axe": "Ruby Axe",
+      "block.accurs.sims_ore": "Sims Ore",
       "item.accurs.emerald_armour_armor_leggings": "EmeraldArmour Leggings",
       "item.accurs.ucya_sword": "Ucya Sword",
       "item.accurs.ucya_armor_chestplate": "Ucya Chestplate",
@@ -2300,6 +2485,7 @@
       "item.accurs.lapis_pickaxe": "Lapis Pickaxe",
       "block.accurs.stea_fence_gate": "Stea Fence Gate",
       "item.accurs.ruby_pickaxe": "Ruby Pickaxe",
+      "item.accurs.sims_armor_leggings": "Sims Leggings",
       "item.accurs.kayze_sword": "Kayze Sword",
       "item.accurs.kayze_armor_boots": "Kayze Boots"
     }

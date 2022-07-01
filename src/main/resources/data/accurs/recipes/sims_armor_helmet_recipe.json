@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "accurs:sims_ingot"
+    },
+    "1": {
+      "item": "accurs:sims_ingot"
+    },
+    "2": {
+      "item": "accurs:sims_ingot"
+    },
+    "3": {
+      "item": "accurs:sims_ingot"
+    },
+    "5": {
+      "item": "accurs:sims_ingot"
+    }
+  },
+  "result": {
+    "item": "accurs:sims_armor_helmet",
+    "count": 1
+  }
+}

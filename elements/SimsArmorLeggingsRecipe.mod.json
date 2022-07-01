@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:SimsIngot"
+      },
+      {
+        "value": "CUSTOM:SimsIngot"
+      },
+      {
+        "value": "CUSTOM:SimsIngot"
+      },
+      {
+        "value": "CUSTOM:SimsIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SimsIngot"
+      },
+      {
+        "value": "CUSTOM:SimsIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SimsIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SimsArmor.legs"
+    },
+    "name": "sims_armor_leggings_recipe",
+    "namespace": "mod"
+  }
+}

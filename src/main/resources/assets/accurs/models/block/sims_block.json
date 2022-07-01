@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "accurs:blocks/sims_ore_block",
+    "particle": "accurs:blocks/sims_ore_block"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "accurs:sims_ingot"
+    },
+    "1": {
+      "item": "accurs:sims_ingot"
+    },
+    "2": {
+      "item": "accurs:sims_ingot"
+    },
+    "3": {
+      "item": "accurs:sims_ingot"
+    },
+    "4": {
+      "item": "accurs:sims_ingot"
+    },
+    "5": {
+      "item": "accurs:sims_ingot"
+    },
+    "6": {
+      "item": "accurs:sims_ingot"
+    },
+    "7": {
+      "item": "accurs:sims_ingot"
+    },
+    "8": {
+      "item": "accurs:sims_ingot"
+    }
+  },
+  "result": {
+    "item": "accurs:sims_block",
+    "count": 1
+  }
+}
