@@ -16,7 +16,7 @@ import java.util.Collections;
 
 public class PaizonLeavesBlock extends LeavesBlock {
 	public PaizonLeavesBlock() {
-		super(BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.GRAVEL).strength(1f, 10f).noOcclusion());
+		super(BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.GRASS).strength(1f, 10f).noOcclusion());
 	}
 
 	@Override

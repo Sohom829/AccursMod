@@ -2322,6 +2322,30 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "tycs_loot_table"
+    },
+    {
+      "name": "DirtBlocks",
+      "type": "tag",
+      "sortid": 279,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_blocks"
+    },
+    {
+      "name": "LogBlocks",
+      "type": "tag",
+      "sortid": 280,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "log_blocks"
+    },
+    {
+      "name": "LeaveBlocks",
+      "type": "tag",
+      "sortid": 281,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leave_blocks"
     }
   ],
   "variable_elements": [],
@@ -2329,21 +2353,21 @@
   "language_map": {
     "en_us": {
       "block.accurs.azcul_stone": "Azcul Stone",
-      "block.accurs.quancy_fence": "Quancy Fence",
       "block.accurs.azcul_slab": "Azcul Slab",
+      "block.accurs.quancy_fence": "Quancy Fence",
       "item.accurs.redstone_armor_chestplate": "Redstone Chestplate",
       "block.accurs.azcul_grass": "Azcul Grass",
       "block.accurs.biyon_button": "Biyon Button",
       "item.accurs.redstone_armor_leggings": "Redstone Leggings",
-      "block.accurs.hell_trees_fence": "HellTrees Fence",
       "item.accurs.redstone_armor_helmet": "Redstone Helmet",
-      "block.accurs.hell_trees_wood": "HellTrees Wood",
-      "block.accurs.quancy_wood": "Quancy Wood",
-      "block.accurs.quancy_log": "Quancy Log",
+      "block.accurs.hell_trees_fence": "HellTrees Fence",
       "block.accurs.azcul_button": "Azcul Button",
+      "block.accurs.quancy_log": "Quancy Log",
+      "block.accurs.quancy_wood": "Quancy Wood",
+      "block.accurs.hell_trees_wood": "HellTrees Wood",
       "item.accurs.copper_armor_boots": "Copper Boots",
-      "advancements.wired_pickaxe.title": "Wired Pickaxe",
       "block.accurs.tyco_wood": "Tyco Wood",
+      "advancements.wired_pickaxe.title": "Wired Pickaxe",
       "item.accurs.ruby_armor_leggings": "Ruby Leggings",
       "fluid.accurs.utyx_fluid": "Utyx Fluid",
       "biome.accurs.paizon": "Paizon",
@@ -2505,7 +2529,7 @@
   "workspaceSettings": {
     "modid": "accurs",
     "modName": "Accurs",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "New ores, tools, biomes, dimensions, foods, items, enhanments ",
     "author": "Sohom829, Sayln",
     "websiteURL": "https://github.com/Sohom829/AccursMod",

@@ -222,7 +222,7 @@ public class AccursModItems {
 	public static final RegistryObject<Item> AZCUL_BUTTON = block(AccursModBlocks.AZCUL_BUTTON, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> AZCUL_STONE = block(AccursModBlocks.AZCUL_STONE, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> AZCUL_GRASS = block(AccursModBlocks.AZCUL_GRASS, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> PAIZON_LEAVES = block(AccursModBlocks.PAIZON_LEAVES, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> PAIZON_LEAVES = block(AccursModBlocks.PAIZON_LEAVES, CreativeModeTab.TAB_DECORATIONS);
 	public static final RegistryObject<Item> SIMS_INGOT = REGISTRY.register("sims_ingot", () -> new SimsIngotItem());
 	public static final RegistryObject<Item> SIMS_ORE = block(AccursModBlocks.SIMS_ORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> SIMS_BLOCK = block(AccursModBlocks.SIMS_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);

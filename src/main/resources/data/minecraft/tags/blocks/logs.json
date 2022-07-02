@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "accurs:azcul_log",
+    "accurs:stea_log",
+    "accurs:tyco_log",
+    "accurs:biyon_log",
+    "accurs:stea_wood",
+    "accurs:quancy_log"
+  ]
+}

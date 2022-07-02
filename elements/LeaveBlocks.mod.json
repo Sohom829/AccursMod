@@ -1,0 +1,32 @@
+{
+  "_fv": 28,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:SteaLeaves"
+      },
+      {
+        "value": "CUSTOM:TycoLeaves"
+      },
+      {
+        "value": "CUSTOM:PaizonLeaves"
+      },
+      {
+        "value": "CUSTOM:BiyonLeaves"
+      },
+      {
+        "value": "CUSTOM:QuancyLeaves"
+      },
+      {
+        "value": "CUSTOM:HellTreesLeaves"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "leaves",
+    "namespace": "minecraft"
+  }
+}

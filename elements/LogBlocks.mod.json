@@ -1,0 +1,32 @@
+{
+  "_fv": 28,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:SteaWood"
+      },
+      {
+        "value": "CUSTOM:SteaLog"
+      },
+      {
+        "value": "CUSTOM:QuancyLog"
+      },
+      {
+        "value": "CUSTOM:TycoLog"
+      },
+      {
+        "value": "CUSTOM:BiyonLog"
+      },
+      {
+        "value": "CUSTOM:AzculLog"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "logs",
+    "namespace": "minecraft"
+  }
+}
