@@ -15,7 +15,7 @@
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
-    "tintType": "No tint",
+    "tintType": "Grass",
     "isItemTinted": false,
     "hasTransparency": false,
     "connectedSides": false,
@@ -52,7 +52,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "ROCK"
+      "value": "GRASS"
     },
     "tickRate": 10,
     "tickRandomly": false,

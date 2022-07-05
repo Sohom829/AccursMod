@@ -33,14 +33,14 @@ import net.mcreator.accurs.init.AccursModBlocks;
 import java.util.List;
 
 public class AzculBiome {
-	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(-0.142857142857f, 0.142857142857f),
-			Climate.Parameter.span(-0.142857142857f, 0.142857142857f), Climate.Parameter.span(0.367142857143f, 0.652857142857f),
-			Climate.Parameter.span(0.657142857143f, 0.942857142857f), Climate.Parameter.point(0),
-			Climate.Parameter.span(0.214764710854f, 0.500478996568f), 0);
+	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(-0.285714285714f, 0.285714285714f),
+			Climate.Parameter.span(-0.285714285714f, 0.285714285714f), Climate.Parameter.span(0.224285714286f, 0.795714285714f),
+			Climate.Parameter.span(0.514285714286f, 1.085714285714f), Climate.Parameter.point(0),
+			Climate.Parameter.span(0.071907567997f, 0.643336139425f), 0);
 
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(12638463).waterColor(-10040320).waterFogColor(-13382656)
-				.skyColor(7972607).foliageColorOverride(10387789).grassColorOverride(9470285)
+				.skyColor(7972607).foliageColorOverride(10387789).grassColorOverride(-13312)
 				.ambientParticle(new AmbientParticleSettings((SimpleParticleType) (AccursModParticleTypes.MAGIC_PARTICLES.get()), 0.005f)).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, PlacementUtils.register("accurs:tree_azcul",

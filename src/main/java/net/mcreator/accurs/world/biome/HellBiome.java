@@ -25,7 +25,6 @@ import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.biome.AmbientParticleSettings;
 import net.minecraft.world.level.biome.AmbientMoodSettings;
 import net.minecraft.world.level.biome.AmbientAdditionsSettings;
-import net.minecraft.world.entity.MobCategory;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.sounds.SoundEvent;
@@ -40,17 +39,16 @@ import net.minecraft.data.BuiltinRegistries;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.Registry;
 
-import net.mcreator.accurs.init.AccursModEntities;
 import net.mcreator.accurs.init.AccursModBlocks;
 import net.mcreator.accurs.init.AccursModBiomes;
 
 import java.util.List;
 
 public class HellBiome {
-	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(-1.428571428571f, 1.428571428571f),
-			Climate.Parameter.span(-2.428571428571f, 0.428571428571f), Climate.Parameter.span(-0.918571428571f, 1.938571428571f),
-			Climate.Parameter.span(-0.628571428571f, 2.228571428571f), Climate.Parameter.point(0),
-			Climate.Parameter.span(-1.506111998629f, 1.351030858513f), 0);
+	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(-0.142857142857f, 0.142857142857f),
+			Climate.Parameter.span(-1.142857142857f, -0.857142857143f), Climate.Parameter.span(0.367142857143f, 0.652857142857f),
+			Climate.Parameter.span(0.657142857143f, 0.942857142857f), Climate.Parameter.point(0),
+			Climate.Parameter.span(-0.220397712915f, 0.065316572799f), 0);
 
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-65536).waterColor(4159204).waterFogColor(329011).skyColor(-65536)
@@ -78,19 +76,18 @@ public class HellBiome {
 				PlacementUtils.register("accurs:disk_sand_hell",
 						FeatureUtils.register("accurs:disk_sand_hell", Feature.DISK,
 								new DiskConfiguration(Blocks.SAND.defaultBlockState(), UniformInt.of(2, 6), 2,
-										List.of(Blocks.NETHERRACK.defaultBlockState(), Blocks.BASALT.defaultBlockState()))),
+										List.of(AccursModBlocks.AZCUL_GRASS.get().defaultBlockState(), Blocks.STONE.defaultBlockState()))),
 						List.of(CountPlacement.of(2), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_TOP_SOLID, BiomeFilter.biome())));
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
 				PlacementUtils.register("accurs:disk_gravel_hell",
 						FeatureUtils.register("accurs:disk_gravel_hell", Feature.DISK,
 								new DiskConfiguration(Blocks.GRAVEL.defaultBlockState(), UniformInt.of(2, 5), 2,
-										List.of(Blocks.NETHERRACK.defaultBlockState(), Blocks.BASALT.defaultBlockState()))),
+										List.of(AccursModBlocks.AZCUL_GRASS.get().defaultBlockState(), Blocks.STONE.defaultBlockState()))),
 						List.of(CountPlacement.of(3), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_TOP_SOLID, BiomeFilter.biome())));
 		BiomeDefaultFeatures.addDefaultCarversAndLakes(biomeGenerationSettings);
 		BiomeDefaultFeatures.addDefaultOres(biomeGenerationSettings);
 		BiomeDefaultFeatures.addSurfaceFreezing(biomeGenerationSettings);
 		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder();
-		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(AccursModEntities.HOGALALLA.get(), 20, 1, 1));
 		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.NONE).biomeCategory(Biome.BiomeCategory.NETHER).temperature(0.5f)
 				.downfall(0f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build())
 				.build();

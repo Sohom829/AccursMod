@@ -180,6 +180,7 @@ public class AccursModBlocks {
 		public static void blockColorLoad(ColorHandlerEvent.Block event) {
 			MagicGrassBlock.blockColorLoad(event);
 			MagicDirtBlock.blockColorLoad(event);
+			AzculGrassBlock.blockColorLoad(event);
 		}
 	}
 }

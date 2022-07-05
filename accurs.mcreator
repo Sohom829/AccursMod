@@ -2324,14 +2324,6 @@
       "registry_name": "tycs_loot_table"
     },
     {
-      "name": "DirtBlocks",
-      "type": "tag",
-      "sortid": 279,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dirt_blocks"
-    },
-    {
       "name": "LogBlocks",
       "type": "tag",
       "sortid": 280,
@@ -2346,6 +2338,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "leave_blocks"
+    },
+    {
+      "name": "GrassBlocks",
+      "type": "tag",
+      "sortid": 282,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_blocks"
     }
   ],
   "variable_elements": [],
@@ -2529,7 +2529,7 @@
   "workspaceSettings": {
     "modid": "accurs",
     "modName": "Accurs",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "description": "New ores, tools, biomes, dimensions, foods, items, enhanments ",
     "author": "Sohom829, Sayln",
     "websiteURL": "https://github.com/Sohom829/AccursMod",

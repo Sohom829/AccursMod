@@ -4,13 +4,17 @@
   "definition": {
     "name": "Paizon",
     "groundBlock": {
-      "value": "CUSTOM:MagicGrass"
+      "value": "Blocks.GRASS"
     },
     "undergroundBlock": {
-      "value": "CUSTOM:MagicDirt"
+      "value": "Blocks.DIRT#0"
     },
     "underwaterBlock": {
       "value": ""
+    },
+    "grassColor": {
+      "value": -16711681,
+      "falpha": 0.0
     },
     "ambientSound": {
       "value": ""
@@ -38,7 +42,7 @@
     "spawnBiome": true,
     "spawnBiomeNether": false,
     "spawnInCaves": false,
-    "biomeWeight": 10,
+    "biomeWeight": 20,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 4,
     "seagrassPerChunk": 0,

@@ -4,10 +4,10 @@
   "definition": {
     "name": "Hell",
     "groundBlock": {
-      "value": "Blocks.NETHERRACK"
+      "value": "CUSTOM:AzculGrass"
     },
     "undergroundBlock": {
-      "value": "Blocks.BASALT"
+      "value": "Blocks.STONE#0"
     },
     "underwaterBlock": {
       "value": "Blocks.LAVA"
@@ -43,10 +43,10 @@
     "temperature": 0.5,
     "baseHeight": 0.1,
     "heightVariation": 0.2,
-    "spawnBiome": true,
+    "spawnBiome": false,
     "spawnBiomeNether": true,
     "spawnInCaves": false,
-    "biomeWeight": 100,
+    "biomeWeight": 10,
     "biomeDictionaryTypes": [
       "NETHER"
     ],
@@ -100,16 +100,6 @@
       "Ores",
       "FrozenTopLayer"
     ],
-    "spawnEntries": [
-      {
-        "entity": {
-          "value": "CUSTOM:Hogalalla"
-        },
-        "minGroup": 1,
-        "maxGroup": 1,
-        "weight": 20,
-        "spawnType": "monster"
-      }
-    ]
+    "spawnEntries": []
   }
 }

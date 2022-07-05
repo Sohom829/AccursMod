@@ -4,13 +4,17 @@
   "definition": {
     "name": "Azcul",
     "groundBlock": {
-      "value": "CUSTOM:AzculGrass"
+      "value": "Blocks.GRASS"
     },
     "undergroundBlock": {
-      "value": "CUSTOM:AzculStone"
+      "value": "Blocks.STONE#0"
     },
     "underwaterBlock": {
-      "value": ""
+      "value": "Blocks.SAND#0"
+    },
+    "grassColor": {
+      "value": -13312,
+      "falpha": 0.0
     },
     "waterColor": {
       "value": -10040320,
@@ -46,7 +50,7 @@
     "spawnBiome": true,
     "spawnBiomeNether": false,
     "spawnInCaves": false,
-    "biomeWeight": 10,
+    "biomeWeight": 20,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 4,
     "seagrassPerChunk": 0,

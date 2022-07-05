@@ -80,8 +80,6 @@ public class AccursModBiomes {
 						List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters.values());
 						parameters.add(new Pair<>(SteaBiome.PARAMETER_POINT,
 								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, STEA.getId()))));
-						parameters.add(new Pair<>(HellBiome.PARAMETER_POINT,
-								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, HELL.getId()))));
 						parameters.add(new Pair<>(IsainBiome.PARAMETER_POINT,
 								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, ISAIN.getId()))));
 						parameters.add(new Pair<>(AzculBiome.PARAMETER_POINT,
@@ -102,17 +100,13 @@ public class AccursModBiomes {
 							List<SurfaceRules.RuleSource> surfaceRules = new ArrayList<>(sequenceRuleSource.sequence());
 							surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, STEA.getId()),
 									Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.STONE.defaultBlockState(), Blocks.WATER.defaultBlockState()));
-							surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, HELL.getId()),
-									Blocks.NETHERRACK.defaultBlockState(), Blocks.BASALT.defaultBlockState(), Blocks.LAVA.defaultBlockState()));
 							surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, ISAIN.getId()),
 									AccursModBlocks.MAGIC_GRASS.get().defaultBlockState(), AccursModBlocks.MAGIC_DIRT.get().defaultBlockState(),
 									AccursModBlocks.MAGIC_DIRT.get().defaultBlockState()));
 							surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, AZCUL.getId()),
-									AccursModBlocks.AZCUL_GRASS.get().defaultBlockState(), AccursModBlocks.AZCUL_STONE.get().defaultBlockState(),
-									AccursModBlocks.AZCUL_STONE.get().defaultBlockState()));
+									Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.STONE.defaultBlockState(), Blocks.SAND.defaultBlockState()));
 							surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, PAIZON.getId()),
-									AccursModBlocks.MAGIC_GRASS.get().defaultBlockState(), AccursModBlocks.MAGIC_DIRT.get().defaultBlockState(),
-									AccursModBlocks.MAGIC_DIRT.get().defaultBlockState()));
+									Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.DIRT.defaultBlockState(), Blocks.DIRT.defaultBlockState()));
 							NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(),
 									noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),
 									noiseGeneratorSettings.noiseRouter(),
@@ -143,8 +137,10 @@ public class AccursModBiomes {
 						SurfaceRules.RuleSource currentRuleSource = noiseGeneratorSettings.surfaceRule();
 						if (currentRuleSource instanceof SurfaceRules.SequenceRuleSource sequenceRuleSource) {
 							List<SurfaceRules.RuleSource> surfaceRules = new ArrayList<>(sequenceRuleSource.sequence());
-							surfaceRules.add(2, anySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, HELL.getId()),
-									Blocks.NETHERRACK.defaultBlockState(), Blocks.BASALT.defaultBlockState(), Blocks.LAVA.defaultBlockState()));
+							surfaceRules.add(2,
+									anySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, HELL.getId()),
+											AccursModBlocks.AZCUL_GRASS.get().defaultBlockState(), Blocks.STONE.defaultBlockState(),
+											Blocks.LAVA.defaultBlockState()));
 							NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(),
 									noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),
 									noiseGeneratorSettings.noiseRouter(),
