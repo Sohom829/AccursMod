@@ -67,6 +67,7 @@ import net.mcreator.accurs.block.HellTreesLeavesBlock;
 import net.mcreator.accurs.block.HellTreesFenceGateBlock;
 import net.mcreator.accurs.block.HellTreesFenceBlock;
 import net.mcreator.accurs.block.HellTreesButtonBlock;
+import net.mcreator.accurs.block.DarkBlockBlock;
 import net.mcreator.accurs.block.BiyonWoodBlock;
 import net.mcreator.accurs.block.BiyonStairsBlock;
 import net.mcreator.accurs.block.BiyonSlabBlock;
@@ -169,6 +170,7 @@ public class AccursModBlocks {
 	public static final RegistryObject<Block> PAIZON_LEAVES = REGISTRY.register("paizon_leaves", () -> new PaizonLeavesBlock());
 	public static final RegistryObject<Block> SIMS_ORE = REGISTRY.register("sims_ore", () -> new SimsOreBlock());
 	public static final RegistryObject<Block> SIMS_BLOCK = REGISTRY.register("sims_block", () -> new SimsBlockBlock());
+	public static final RegistryObject<Block> DARK_BLOCK = REGISTRY.register("dark_block", () -> new DarkBlockBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

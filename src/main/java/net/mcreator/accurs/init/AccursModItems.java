@@ -62,6 +62,13 @@ import net.mcreator.accurs.item.EmeraldToolsPickaxeItem;
 import net.mcreator.accurs.item.EmeraldToolsHoeItem;
 import net.mcreator.accurs.item.EmeraldToolsAxeItem;
 import net.mcreator.accurs.item.EmeraldArmourArmorItem;
+import net.mcreator.accurs.item.DarkSwordItem;
+import net.mcreator.accurs.item.DarkShovelItem;
+import net.mcreator.accurs.item.DarkPickaxeItem;
+import net.mcreator.accurs.item.DarkItem;
+import net.mcreator.accurs.item.DarkHoeItem;
+import net.mcreator.accurs.item.DarkAxeItem;
+import net.mcreator.accurs.item.DarkArmorItem;
 import net.mcreator.accurs.item.CopperSwordItem;
 import net.mcreator.accurs.item.CopperShovelItem;
 import net.mcreator.accurs.item.CopperPickaxeItem;
@@ -235,6 +242,17 @@ public class AccursModItems {
 	public static final RegistryObject<Item> SIMS_ARMOR_CHESTPLATE = REGISTRY.register("sims_armor_chestplate", () -> new SimsArmorItem.Chestplate());
 	public static final RegistryObject<Item> SIMS_ARMOR_LEGGINGS = REGISTRY.register("sims_armor_leggings", () -> new SimsArmorItem.Leggings());
 	public static final RegistryObject<Item> SIMS_ARMOR_BOOTS = REGISTRY.register("sims_armor_boots", () -> new SimsArmorItem.Boots());
+	public static final RegistryObject<Item> DARK = REGISTRY.register("dark", () -> new DarkItem());
+	public static final RegistryObject<Item> DARK_BLOCK = block(AccursModBlocks.DARK_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> DARK_PICKAXE = REGISTRY.register("dark_pickaxe", () -> new DarkPickaxeItem());
+	public static final RegistryObject<Item> DARK_AXE = REGISTRY.register("dark_axe", () -> new DarkAxeItem());
+	public static final RegistryObject<Item> DARK_SWORD = REGISTRY.register("dark_sword", () -> new DarkSwordItem());
+	public static final RegistryObject<Item> DARK_SHOVEL = REGISTRY.register("dark_shovel", () -> new DarkShovelItem());
+	public static final RegistryObject<Item> DARK_HOE = REGISTRY.register("dark_hoe", () -> new DarkHoeItem());
+	public static final RegistryObject<Item> DARK_ARMOR_HELMET = REGISTRY.register("dark_armor_helmet", () -> new DarkArmorItem.Helmet());
+	public static final RegistryObject<Item> DARK_ARMOR_CHESTPLATE = REGISTRY.register("dark_armor_chestplate", () -> new DarkArmorItem.Chestplate());
+	public static final RegistryObject<Item> DARK_ARMOR_LEGGINGS = REGISTRY.register("dark_armor_leggings", () -> new DarkArmorItem.Leggings());
+	public static final RegistryObject<Item> DARK_ARMOR_BOOTS = REGISTRY.register("dark_armor_boots", () -> new DarkArmorItem.Boots());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

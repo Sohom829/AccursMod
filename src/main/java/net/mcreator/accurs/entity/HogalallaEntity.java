@@ -9,7 +9,6 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 
 import net.minecraft.world.level.levelgen.Heightmap;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Items;
@@ -41,6 +40,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.chat.TextComponent;
 
+import net.mcreator.accurs.init.AccursModItems;
 import net.mcreator.accurs.init.AccursModEntities;
 
 import java.util.Set;
@@ -98,7 +98,7 @@ public class HogalallaEntity extends PathfinderMob {
 
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
 		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(Blocks.NETHERITE_BLOCK));
+		this.spawnAtLocation(new ItemStack(AccursModItems.DARK.get()));
 	}
 
 	@Override

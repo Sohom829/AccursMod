@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "accurs:dark_block"
+    }
+  ],
+  "result": {
+    "item": "accurs:dark",
+    "count": 9
+  }
+}

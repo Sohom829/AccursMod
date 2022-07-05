@@ -77,7 +77,7 @@
     "immuneToWither": true,
     "immuneToDragonBreath": true,
     "mobDrop": {
-      "value": "Blocks.NETHERITE_BLOCK"
+      "value": "CUSTOM:Dark"
     },
     "livingSound": {
       "value": "entity.endermen.ambient"

@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "accurs:dark"
+    },
+    "1": {
+      "item": "accurs:dark"
+    },
+    "2": {
+      "item": "accurs:dark"
+    },
+    "3": {
+      "item": "accurs:dark"
+    },
+    "4": {
+      "item": "accurs:dark"
+    },
+    "5": {
+      "item": "accurs:dark"
+    },
+    "6": {
+      "item": "accurs:dark"
+    },
+    "7": {
+      "item": "accurs:dark"
+    },
+    "8": {
+      "item": "accurs:dark"
+    }
+  },
+  "result": {
+    "item": "accurs:dark_block",
+    "count": 1
+  }
+}
